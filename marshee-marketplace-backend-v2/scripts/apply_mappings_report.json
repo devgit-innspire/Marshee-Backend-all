@@ -1,0 +1,1408 @@
+{
+  "runAt": "2026-07-15T13:39:23.774Z",
+  "dryRun": false,
+  "force": true,
+  "summary": {
+    "total": 85,
+    "updated": 85,
+    "skipped": 0,
+    "notFound": 0,
+    "errors": 0
+  },
+  "updated": [
+    {
+      "productId": "68d521b72e8cbc652705442a",
+      "productName": "Paws for Greens Dog Ice Cream Premix 100% Natural Pet Treats Premium & Healthy Cat Ice Cream Prebiotics for Digestive Ice Cream Health Easy to Prepare & Store",
+      "sku": "B0F9THH6DT",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fp4g-veggie.jpg?alt=media&token=3a38f0c4-f448-4fac-973e-e481380b325e",
+      "imagePath": "products/p4g-veggie.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d528b22e8cbc6527054451",
+      "productName": "Basil Woody Walk Mild & Fragranced Perfume for Pets, Dog Grooming Spray for Sensitive Skin, Comfort with Bacterial Protection on Body and Softer Coat (Size - 130ml)",
+      "sku": "B089558FY3",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-woody.jpg?alt=media&token=7e5d1411-02f3-4911-83da-ea457d881482",
+      "imagePath": "products/basil-woody.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d529e22e8cbc6527054458",
+      "productName": "Basil Dental Care Twisted Chew Sticks Pets Treats and Chews, Light and Healthy for Dogs (200gms in a Packet) Dental Cavities and Cleans - Pack of 1",
+      "sku": "B08954D1PW",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FBasil-dental-care.jpg?alt=media&token=1be0cfad-88f2-444a-a3f6-b0bcb76d9b5c",
+      "imagePath": "products/Basil-dental-care.jpg",
+      "confidence": 75,
+      "method": "name-fuzzy",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d534862e8cbc652705448b",
+      "productName": "BASIL Royal Yet Noble No Tick Herbal Pet Shampoo, 500ml | Tick & Flea Removal | Itch Relief, Paraben-Free | Softens, Strengthens & Adds Shine to Fur",
+      "sku": "B0DPX7C1N1",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-shampoo01.webp?alt=media&token=18a05860-6239-46d2-81aa-f7205848aaa4",
+      "imagePath": "products/basil-shampoo01.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d539a22e8cbc65270544a3",
+      "productName": "Basil Softy Pet Paw Butter Cream, Winter Care Enriched with Almond Oil | Heals, Moisturizes & Softens Dry Chapped Paws",
+      "sku": "B089525GMZ",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fpaw-Clearner.webp?alt=media&token=f51160fb-bbe2-47d8-898a-e01778a1a255",
+      "imagePath": "products/paw-Clearner.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d65f1ec483d47eb714a14d",
+      "productName": "BASIL Royal Yet Noble Cinnamon Herbal Mouth Freshening Spray, Completely Safe for Pets, Easy Spray",
+      "sku": "B0DQ1NRD85",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fmouth-spray.webp?alt=media&token=383d7902-18b8-45fb-b0dc-84a116a66656",
+      "imagePath": "products/mouth-spray.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d66223c483d47eb714a161",
+      "productName": "Basil Gluten Free Treats & Chews (Guilt-Free) Lollipop, Layered with Chicken for Dogs, Puppies, Diet Treats for Pets",
+      "sku": "B098QZK46H",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Flollipop-2.jpg?alt=media&token=f5ea84cc-9a72-4e3d-b019-528ab67b66bb",
+      "imagePath": "products/lollipop-2.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69088568b87c69950dd8bed7",
+      "productName": "Veg Dog Food Plant-Based Meat-Free for All Breeds Dry Kibble high Protein Complete Nutrition special for puppy",
+      "sku": "VEG-DOG-FOOD-3KG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fkibble.jpg?alt=media&token=1a804ca2-c14a-4928-a042-b13f05a867ff",
+      "imagePath": "products/kibble.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690c915fbff3d2daff2e74f2",
+      "productName": "BREEDERS CLUB - ULTIMATE DIET - ENERGY+ (ALL BREEDS)",
+      "sku": "BREEDERS-CLUB-ENERGY-18KG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FBreeders-r4p.png.webp?alt=media&token=d87f5aae-6f8d-4f8c-a51f-2f7e9da8b1d6",
+      "imagePath": "products/Breeders-r4p.png.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690d8d0120e30f58044c6ca5",
+      "productName": "BREEDERS CLUB - PUPPY (ALL BREEDS)",
+      "sku": "BREEDERS-CLUB-PUPPY-18KG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FBreedersPack01.png.webp?alt=media&token=8b284b42-3b33-4581-b686-9d6a2e25c048",
+      "imagePath": "products/BreedersPack01.png.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690d9b6720e30f58044c70ed",
+      "productName": "ULTIMATE DIET - MEDIUM & MAXI ADULT",
+      "sku": "ULTIMATE-DIET-MEDIUM-MAXI-ADULT",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FMsxi-puppy.webp?alt=media&token=2f18e259-6776-41d2-8362-95b978ab1128",
+      "imagePath": "products/Msxi-puppy.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690eca4467885014c0986b77",
+      "productName": "YUM BOOST - FOOD TOPPER",
+      "sku": "YUM-BOOST-FOOD-TOPPER",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fyum-1.webp?alt=media&token=a43c879d-084e-4839-a6ff-402cdbf87cc0",
+      "imagePath": "products/yum-1.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690ed2c1d3dd2b0131ad4ce6",
+      "productName": "CHICKEN HEART TREATS",
+      "sku": "CHICKEN-HEART-TREATS",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FR4P-TreatsPack_ChickenHeart_Back_Flat.webp_wotm9z.png?alt=media&token=cfa56cbf-cfbc-4499-b776-72198f38a588",
+      "imagePath": "products/R4P-TreatsPack_ChickenHeart_Back_Flat.webp_wotm9z.png",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "691d89721233b508acdcb330",
+      "productName": "MOE PUPPY Keratin+ Hairfall Shampoo for Dogs & Cats",
+      "sku": "MOE-PUPPY-KERATIN-SHAMPOO",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FKeratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp?alt=media&token=0df16aa7-4a4e-4e8f-bdbd-19fd669de2a8",
+      "imagePath": "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "691da9e3be2d81413e442c25",
+      "productName": "4 in 1 Conditioner for Dogs & Cats",
+      "sku": "MOE-PUPPY-4IN1-CONDITIONER",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2F4_in_1_Conditioner_for_Dogs_Cats.png_zclp8a.webp?alt=media&token=35841370-6ee6-4b05-9455-a49f79ad27ea",
+      "imagePath": "products/4_in_1_Conditioner_for_Dogs_Cats.png_zclp8a.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d527a02e8cbc6527054449",
+      "productName": "BASIL Royal Yet Noble Pet Shampoo, Silky Soft Conditioning Shampoo (250 Milliliter) for Dogs & Puppies Deep Cleansing, Skin Friendly, Freshening Fragrance, Mild On Skin & Paraben Free",
+      "sku": "B07TP8NHBM",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-shampoo01.webp?alt=media&token=18a05860-6239-46d2-81aa-f7205848aaa4",
+      "imagePath": "products/basil-shampoo01.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d534c32e8cbc6527054497",
+      "productName": "Basil Silky Soft Conditioning Shampoo",
+      "sku": "B08955QSJG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-shampoo01.webp?alt=media&token=18a05860-6239-46d2-81aa-f7205848aaa4",
+      "imagePath": "products/basil-shampoo01.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d537cf2e8cbc652705449b",
+      "productName": "Basil Moisturising Foam Dry Bath Shampoo for Dogs & Cats | No-Rinse Formula | Gentle Cleansing & Fresh Geranium Scent | Quick & Easy Grooming for Pets | Ideal for Sensitive Skin",
+      "sku": "B0B1WQ2RLX",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-shampoo01.webp?alt=media&token=18a05860-6239-46d2-81aa-f7205848aaa4",
+      "imagePath": "products/basil-shampoo01.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d539bd2e8cbc65270544a7",
+      "productName": "Basil Woody Walk Mild & Fragranced Perfume for Dogs & Pets Comfort with Bacterial Protection on Body and Softer Coat",
+      "sku": "B09SYXKXRC",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-woody.jpg?alt=media&token=7e5d1411-02f3-4911-83da-ea457d881482",
+      "imagePath": "products/basil-woody.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d62f4557604b4ed21d236f",
+      "productName": "Basil Garden Fresh Mild & Fragranced Perfume for Pets Comfort with Bacterial Protection on Body and Softer Coat",
+      "sku": "B09SYX36LM",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-woody.jpg?alt=media&token=7e5d1411-02f3-4911-83da-ea457d881482",
+      "imagePath": "products/basil-woody.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68dfbbd93a1ae3926908273a",
+      "productName": "Basil Royal Yet Noble Gluten Free Treats & Chews (Guilt-Free) Turtle with Peanut Butter, Layered with Chicken for Dogs, Puppies, Diet Treats for Pets",
+      "sku": "B0DPWY528M",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Flollipop-2.jpg?alt=media&token=f5ea84cc-9a72-4e3d-b019-528ab67b66bb",
+      "imagePath": "products/lollipop-2.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690b3831989295bf1683af44",
+      "productName": "Veg Ready to Eat Wet Dog Food Plant & Based Vegan Pet Food Preservative-Free (Mix Veggie 100g+100g Pack)",
+      "sku": "VEG-WET-DOG-MIXVEGGIE",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fveggie-mix.jpg?alt=media&token=07a37ef3-ab9b-4fd1-a709-57a73ce4ae00",
+      "imagePath": "products/veggie-mix.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690b50c7d20bfd6726b3534f",
+      "productName": "Veg Ready to Eat Wet Dog Food Plant & Based Vegan Pet Food Preservative-Free (Peas 100g+100g Pack)",
+      "sku": "VEG-WET-DOG-PEAS",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fpeas.jpg?alt=media&token=b322aba7-567b-471b-9788-547cd50e05b8",
+      "imagePath": "products/peas.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690c861abff3d2daff2e73d6",
+      "productName": "PROBIOTIC SHAMPOO BAR FOR SHORT HAIRED DOGS",
+      "sku": "PROBIOTIC-SHAMPOO-BAR-SHORT-HAIR",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FShampoo_Bar%20r4p-1.webp?alt=media&token=45b99f73-9381-45f5-9e95-9525371a6af0",
+      "imagePath": "products/Shampoo_Bar r4p-1.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690d88e099635108008760ff",
+      "productName": "PROBIOTIC SHAMPOO LIQUID FOR LONG HAIRED DOGS",
+      "sku": "PROBIOTIC-SHAMPOO-LIQUID-LONG-HAIR",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FShampoo_Bar%20r4p-1.webp?alt=media&token=45b99f73-9381-45f5-9e95-9525371a6af0",
+      "imagePath": "products/Shampoo_Bar r4p-1.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690ec61367885014c0986997",
+      "productName": "ULTIMATE DIET - ENERGY+",
+      "sku": "ULTIMATE-DIET-ENERGY-PLUS",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fenergy%2B.webp?alt=media&token=85233958-4f89-4940-8f79-566fbcfd3365",
+      "imagePath": "products/energy+.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690ec75367885014c0986a11",
+      "productName": "HOME FOOD NUTRI BOOST - ADULT",
+      "sku": "HOME-FOOD-NUTRI-BOOST-ADULT",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FHome-food.png.webp?alt=media&token=b25aa400-1b5b-43a5-8721-a71f93fc0442",
+      "imagePath": "products/Home-food.png.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "691eb5e532c7f40da4a66693",
+      "productName": "Paw Balm - Paw Cream for Dogs & Cats",
+      "sku": "MOE-PUPPY-PAW-BALM",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fpaw-Clearner.webp?alt=media&token=f51160fb-bbe2-47d8-898a-e01778a1a255",
+      "imagePath": "products/paw-Clearner.webp",
+      "confidence": 67,
+      "method": "name-fuzzy",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "691ebc8732c7f40da4a667c4",
+      "productName": "Keratin+ Hairfall Shampoo for Dogs & Cats 900ml",
+      "sku": "MOE-PUPPY-KERATIN-SHAMPOO-900ML",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FKeratin_Hairfall_Shampoo_for_Dogs_Cats_5_qt9hua.png?alt=media&token=3c152094-ef33-4651-83b7-70d72120baf7",
+      "imagePath": "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_5_qt9hua.png",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "694a7b307e95c184f1ac2276",
+      "productName": "AyurPet Yak Cheese Chews for Dogs – 6-Hour Long-Lasting Dental Chew, Joint Support",
+      "sku": "AP-1-HYCC",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fayurpet-yak-cheese.jpg?alt=media&token=c5ef264f-902b-4c99-9741-7a0edb7459e5",
+      "imagePath": "products/ayurpet-yak-cheese.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "variants.5.media.images",
+        "variants.6.media.images",
+        "variants.7.media.images",
+        "variants.8.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "694b92065e3ea7f8766a74fa",
+      "productName": "GoodGut+",
+      "sku": "AP-2-GG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fgoodgut%2B01.jpg?alt=media&token=1ccc98ec-e52c-4d35-abba-5e3acb122216",
+      "imagePath": "products/goodgut+01.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "694bad035e3ea7f8766a74fe",
+      "productName": "AyurPet Hip-O-Joint+ Joint Support Drops for Dogs with Glucosamine – Ayurvedic Mobility Supplement 175 ml",
+      "sku": "AP-3-HOJ",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FHipOJoint02.jpg?alt=media&token=e04eea58-8255-48f0-a023-ed81c7c0cabc",
+      "imagePath": "products/HipOJoint02.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d5014fa4354b83024bc7ba",
+      "productName": "PAWS FOR GREENS Multivitamin Vegan Dog Food 100% Natural Plant-Based Meat-Free for All Breeds This Vet-formulated Veg Dry Kibble high Protein and Fiber Providing Complete Nutrition 1kg Pack",
+      "sku": "PFG20240012",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fpfg-vegfood.webp?alt=media&token=35f6fd3a-3a1b-48dc-9f0f-5e3cf7136fd5",
+      "imagePath": "products/pfg-vegfood.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d51a4e4622437ac9a9015b",
+      "productName": "PAWS FOR GREENS Wet Dog Food Real Veggies Ready to Eat Pet Food Human-Grade Ingredients, 100% Natural & Preservative-Free Veg Dog Food for Puppies & Adults",
+      "sku": "PFGWDF02",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Freal-veggies.jpg?alt=media&token=ed566647-7e15-4ffb-a063-105095c13456",
+      "imagePath": "products/real-veggies.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d52c722e8cbc6527054469",
+      "productName": "Basil Pet Treats & Chews Soft & Tasty Calcium Bones for Pets of All Ages (100gm in 1 Packet) Regular Needs - Pack of 1",
+      "sku": "B0895252LN",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FCalcium-Bone.webp?alt=media&token=da567b37-a42b-4bfd-87f6-84bb2e2eb64b",
+      "imagePath": "products/Calcium-Bone.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d534902e8cbc652705448f",
+      "productName": "BASIL Royal Yet Noble Oat & Aloe Moisturizing Shampoo|Dog Shampoo for Sensitive Skin|Cleanse, Detangle & Moisturize for Smooth & Itch-Free Hair with Aloe Vera|Paraben-Free",
+      "sku": "B07TSWZK7X",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-shampoo01.webp?alt=media&token=18a05860-6239-46d2-81aa-f7205848aaa4",
+      "imagePath": "products/basil-shampoo01.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d65f07c483d47eb714a149",
+      "productName": "BASIL SPEARMINT Herbal Mouth Freshening Spray, Completely Safe for Pets, Easy spray",
+      "sku": "B09RZV5SJP",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fmouth-spray.webp?alt=media&token=383d7902-18b8-45fb-b0dc-84a116a66656",
+      "imagePath": "products/mouth-spray.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d661dfc483d47eb714a159",
+      "productName": "Basil Calcium Milk 360* Dental Chew Treat for Dogs & Puppies",
+      "sku": "B0DRVX1BT6",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-calcium-milk.webp?alt=media&token=036fee96-c32f-4ee8-8e77-3416a86819cf",
+      "imagePath": "products/basil-calcium-milk.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69089ab1b87c69950dd8bedb",
+      "productName": "Veg Adult Dog Food – High Protein, Plant-Based, Meat-Free Dry Dog Food Kibble for All Breeds | Complete Nutrition",
+      "sku": "VEG-ADULT-DOG-1KG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fkibble.jpg?alt=media&token=1a804ca2-c14a-4928-a042-b13f05a867ff",
+      "imagePath": "products/kibble.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69089b66b87c69950dd8bedf",
+      "productName": "Veg Ready to Eat Wet Dog Food Plant & Based Vegan Pet Food Preservative-Free (Pumpkin 100g+100g Pack)",
+      "sku": "VEG-WET-DOG-PUMPKIN",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FO'pumpkin.jpg?alt=media&token=62977c79-4437-442d-8524-fe6a6f94b3ca",
+      "imagePath": "products/O'pumpkin.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690c6212c0da757a0fa2dc54",
+      "productName": "Dog Treats Plant-Based Healthy Vegan Biscuits for Dogs with Peanut Butter & Banana-100gm",
+      "sku": "VEG-DOG-TREATS-PB",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Forganic-biscuit01.jpg?alt=media&token=4692f17b-c82f-4378-88cd-6aab34e9e754",
+      "imagePath": "products/organic-biscuit01.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690c766ebff3d2daff2e6f84",
+      "productName": "TASTER PACK - PUPPY",
+      "sku": "TASTER-PACK-PUPPY",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2F100G_TasterPack_Puppy_Back_1.webp.png?alt=media&token=30ffbe74-f4e8-40a5-a25f-838c5c7fd2af",
+      "imagePath": "products/100G_TasterPack_Puppy_Back_1.webp.png",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690c7deabff3d2daff2e70e8",
+      "productName": "PROBIOTIC DAILY COAT CLEANSER",
+      "sku": "PROBIOTIC-COAT-CLEANSER-200ML",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fcot-dog-cleaner01.jpg?alt=media&token=bf1c9c7d-289f-44cd-8a52-9082c705c746",
+      "imagePath": "products/cot-dog-cleaner01.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690d94bb20e30f58044c6e43",
+      "productName": "BREEDERS CLUB - ADULT (ALL BREEDS)",
+      "sku": "BREEDERS-CLUB-ADULT-18KG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FBreeders-r4p.png.webp?alt=media&token=d87f5aae-6f8d-4f8c-a51f-2f7e9da8b1d6",
+      "imagePath": "products/Breeders-r4p.png.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690d965820e30f58044c6e92",
+      "productName": "ULTIMATE DIET - LARGE & GIANT ADULT",
+      "sku": "ULTIMATE-DIET-LG-GIANT-ADULT",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FLarge-giant.webp?alt=media&token=5cc4e964-b113-4454-ad50-68372093ffca",
+      "imagePath": "products/Large-giant.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690d9de320e30f58044c7177",
+      "productName": "ULTIMATE DIET - TOY & SMALL ADULT",
+      "sku": "ULTIMATE-DIET-TOY-SMALL-ADULT",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FToy-small-adult02webp.webp?alt=media&token=96a6426e-f68c-4851-b72c-8469eed958da",
+      "imagePath": "products/Toy-small-adult02webp.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690daa3920e30f58044c732f",
+      "productName": "ULTIMATE DIET - MEDIUM & MAXI PUPPY",
+      "sku": "ULTIMATE-DIET-MEDIUM-MAXI-PUPPY",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FMsxi-puppy.webp?alt=media&token=2f18e259-6776-41d2-8362-95b978ab1128",
+      "imagePath": "products/Msxi-puppy.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690ec47d67885014c098683e",
+      "productName": "ULTIMATE DIET - TOY & SMALL PUPPY",
+      "sku": "ULTIMATE-DIET-TOY-SMALL-PUPPY",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fsmall-puppy.webp?alt=media&token=bc171b4c-ea8b-499e-8fa1-a880ce94cc33",
+      "imagePath": "products/small-puppy.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d52ec22e8cbc6527054477",
+      "productName": "Groom My Pet Dog Paw Cleaner | Soft Silicone Bristles for Quick Cleaning | Portable Paw Washing Cup | Wash Away Dirt, Mud & Debris for Large Dog | color may vary",
+      "sku": "B0DVLTFCR2",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fpaw-Clearner.webp?alt=media&token=f51160fb-bbe2-47d8-898a-e01778a1a255",
+      "imagePath": "products/paw-Clearner.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d5337c2e8cbc652705447f",
+      "productName": "PAWS FOR GREENS Wet Dog Food Veggie Mix Ready to Eat Pet Food Human-Grade Ingredients, 100% Natural & Preservative-Free Veg Dog Food for Puppies & Adults",
+      "sku": "PFGWDF-MIXVEG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fmix-veggie-ingre.jpg?alt=media&token=65787cee-9c7f-4cfd-a5d4-a4f5bc5ce0c4",
+      "imagePath": "products/mix-veggie-ingre.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d5338b2e8cbc6527054483",
+      "productName": "Pawfectly Made Fresh Wet Dog Food, Egg & Veggies | Egg O' Pumpkin",
+      "sku": "B0DVLTFCR3",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FO'pumpkin.jpg?alt=media&token=62977c79-4437-442d-8524-fe6a6f94b3ca",
+      "imagePath": "products/O'pumpkin.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d534562e8cbc6527054487",
+      "productName": "BASIL Royal Yet Noble Silky Soft Conditioning Shampoo for Dogs|DeepCleansing,Conditioning,Detangling & Moisturizing Formula,Nourishing BasilOil to Promote Healthy Skin&Shiny Coats",
+      "sku": "014-500ML",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-shampoo01.webp?alt=media&token=18a05860-6239-46d2-81aa-f7205848aaa4",
+      "imagePath": "products/basil-shampoo01.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d534ae2e8cbc6527054493",
+      "productName": "BASIL Royal Yet Noble Anti-Dandruff & Itch Shampoo for Dogs|Cleans, Conditions, Detangles, and Moisturizes |Natural Basil Oil |for All Coat Types|Paraben-Free & Cruelty-Free",
+      "sku": "B07TP9MC56",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fbasil-royal-yet-novble.jpg?alt=media&token=4298404e-12f6-414d-a4f1-1a17fdc1ae6d",
+      "imagePath": "products/basil-royal-yet-novble.jpg",
+      "confidence": 80,
+      "method": "name-fuzzy",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d66136c483d47eb714a155",
+      "productName": "Basil Fresh Breath Mouth Refreshing Chewy Bites 360 Dental Chews for All Dogs Flexible Dental Bone",
+      "sku": "B07R68XZV8",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FBasil-dental-care.jpg?alt=media&token=1be0cfad-88f2-444a-a3f6-b0bcb76d9b5c",
+      "imagePath": "products/Basil-dental-care.jpg",
+      "confidence": 75,
+      "method": "name-fuzzy",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "68d661fac483d47eb714a15d",
+      "productName": "BASIL Royal Yet Noble Dog Treats (Dental Stick (Dental Care+Immune Care)",
+      "sku": "B07R4PL9VQ",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FBasil-dental-care.jpg?alt=media&token=1be0cfad-88f2-444a-a3f6-b0bcb76d9b5c",
+      "imagePath": "products/Basil-dental-care.jpg",
+      "confidence": 75,
+      "method": "name-fuzzy",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690c70f5c0da757a0fa2dc58",
+      "productName": "TASTER PACK - ADULT",
+      "sku": "TASTER-PACK-ADULT",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Ftaster-pack-adult.webp?alt=media&token=9794b96b-39d8-4d12-8d2e-b6efebe5c9c6",
+      "imagePath": "products/taster-pack-adult.webp",
+      "confidence": 100,
+      "method": "SKU-exact",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690c8c12bff3d2daff2e744c",
+      "productName": "PROBIOTIC GROOMING BUTTER",
+      "sku": "PROBIOTIC-GROOMING-BUTTER-50G",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fgrooming-butter-front.jpg.webp?alt=media&token=5637d9c7-9adf-495a-b508-031d88b11714",
+      "imagePath": "products/grooming-butter-front.jpg.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690d8f5b20e30f58044c6d35",
+      "productName": "BREEDERS CLUB - NUTRITION BOOSTER (ALL BREEDS ADULT)",
+      "sku": "BREEDERS-CLUB-NUTRITION-BOOSTER-12KG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FBreeders-r4p.png.webp?alt=media&token=d87f5aae-6f8d-4f8c-a51f-2f7e9da8b1d6",
+      "imagePath": "products/Breeders-r4p.png.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690d926920e30f58044c6d3d",
+      "productName": "PROBIOTIC KENNEL WASH",
+      "sku": "PROBIOTIC-KENNEL-WASH-5KG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FProbiotivc_Wash_-Back.png.webp?alt=media&token=c096b03b-1cf6-435b-adde-2444bdebddf1",
+      "imagePath": "products/Probiotivc_Wash_-Back.png.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690d93d620e30f58044c6d41",
+      "productName": "PROBIOTIC FLOOR CLEANER",
+      "sku": "PROBIOTIC-FLOOR-CLEANER-1KG",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FFLOOR_CLEANER_-_INDGREDIENTS.png.webp?alt=media&token=156ba28c-2586-439e-9778-71168541ed58",
+      "imagePath": "products/FLOOR_CLEANER_-_INDGREDIENTS.png.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690da12920e30f58044c72aa",
+      "productName": "ULTIMATE DIET - LARGE & GIANT PUPPY",
+      "sku": "ULTIMATE-DIET-LG-GIANT-PUPPY",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Flarge-giant-puppy.webp?alt=media&token=e3275e02-b50a-4239-835a-adfe8a2c1bb5",
+      "imagePath": "products/large-giant-puppy.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690eceef67885014c0986c67",
+      "productName": "MEAL TOPPER GRAVY",
+      "sku": "MEAL-TOPPER-GRAVY",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FMeal-topper-r4p.webp?alt=media&token=93f05d53-a9f7-4499-81ec-b77c83aedbdc",
+      "imagePath": "products/Meal-topper-r4p.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "690ed0f567885014c0986e6a",
+      "productName": "CHICKEN LIVER TREATS",
+      "sku": "CHICKEN-LIVER-TREATS",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fchicken-liver-treat01.jpg?alt=media&token=c6b24e52-fc13-46a9-b459-1e6d6c4ab76f",
+      "imagePath": "products/chicken-liver-treat01.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "692d5fa9bd3b253babc518f5",
+      "productName": "Collagen Supplement for Dogs & Cats – Promotes Mobility, Skin Elasticity & Fur Shine (15 Sachets)",
+      "sku": "BASIL-COLLAGEN-SUPPLEMENT",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2FBasil-collagen-sup01.jpg?alt=media&token=b167422f-13dc-43fc-810e-082751e96d7c",
+      "imagePath": "products/Basil-collagen-sup01.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "6995bdd6be20e8385afa0580",
+      "productName": "Purrfect Chicken Delight ",
+      "sku": "CK85",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fkibble.jpg?alt=media&token=1a804ca2-c14a-4928-a042-b13f05a867ff",
+      "imagePath": "products/kibble.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "6995bf17be20e8385afa05a3",
+      "productName": "Fin- tastic Fish Feast ",
+      "sku": "FF85",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fkibble.jpg?alt=media&token=1a804ca2-c14a-4928-a042-b13f05a867ff",
+      "imagePath": "products/kibble.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "6995c230be20e8385afa05e2",
+      "productName": "Lamb Medley ",
+      "sku": "LM85",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fkibble.jpg?alt=media&token=1a804ca2-c14a-4928-a042-b13f05a867ff",
+      "imagePath": "products/kibble.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "6995c3c8be20e8385afa0605",
+      "productName": "Goat Goodness ",
+      "sku": "GG85",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fkibble.jpg?alt=media&token=1a804ca2-c14a-4928-a042-b13f05a867ff",
+      "imagePath": "products/kibble.jpg",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69e9c2d9794e2616c4f0f6da",
+      "productName": "Green washed Collar detail Dog Jacket and Bandana",
+      "sku": "DJ001",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FWebsiteImages-Pawroz21_53_49_1783930529333_99cc2cc23cc0.webp?alt=media&token=137fc37a-9d06-43f5-800c-f2785c2c8656",
+      "imagePath": "products/variants/WebsiteImages-Pawroz21_53_49_1783930529333_99cc2cc23cc0.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "variants.5.media.images",
+        "variants.6.media.images",
+        "variants.7.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69e9c6d95fd1b07870411758",
+      "productName": "Beige Printed Side Panel Denim Dog Jacket and Bandana",
+      "sku": "PROD098",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FWebsiteImages-Pawroz21_53_49_1783930529333_99cc2cc23cc0.webp?alt=media&token=137fc37a-9d06-43f5-800c-f2785c2c8656",
+      "imagePath": "products/variants/WebsiteImages-Pawroz21_53_49_1783930529333_99cc2cc23cc0.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "variants.5.media.images",
+        "variants.6.media.images",
+        "variants.7.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69e9de315fd1b078704118a4",
+      "productName": "Black Contrast Stripe Dog Jacket and Bandana",
+      "sku": "PROD099",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FWebsiteImages-Pawrozcopy46_1783930540755_57b9c3b82a21.webp?alt=media&token=13334fa4-95c4-4709-a626-e7ee2bb233f9",
+      "imagePath": "products/variants/WebsiteImages-Pawrozcopy46_1783930540755_57b9c3b82a21.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "variants.5.media.images",
+        "variants.6.media.images",
+        "variants.7.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69e9dff45fd1b078704118d5",
+      "productName": "Two-Tone Blue Denim Jetsetter Dog Jacket",
+      "sku": "PROD100",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FWebsiteImages-Pawrozcopy10_1783930564517_ccff0b17d6a9.webp?alt=media&token=164fc8ed-2222-44c9-960e-d6fa379d581e",
+      "imagePath": "products/variants/WebsiteImages-Pawrozcopy10_1783930564517_ccff0b17d6a9.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "variants.5.media.images",
+        "variants.6.media.images",
+        "variants.7.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69e9e1d95fd1b07870411907",
+      "productName": "Red Sweateshirt with Compass print and Bandana",
+      "sku": "PROD101",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FWebsiteImages-Pawrozcopy7_1783930563899_2a8ddc47b150.webp?alt=media&token=f179c2b8-a418-4867-81e8-7805f86e2664",
+      "imagePath": "products/variants/WebsiteImages-Pawrozcopy7_1783930563899_2a8ddc47b150.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "variants.5.media.images",
+        "variants.6.media.images",
+        "variants.7.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69e9e3ce5fd1b07870411938",
+      "productName": "Black and Grey Patched Urban Dog Shaket",
+      "sku": "PROD102",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FWebsiteImages-Pawrozcopy10_1783930564517_ccff0b17d6a9.webp?alt=media&token=164fc8ed-2222-44c9-960e-d6fa379d581e",
+      "imagePath": "products/variants/WebsiteImages-Pawrozcopy10_1783930564517_ccff0b17d6a9.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "variants.5.media.images",
+        "variants.6.media.images",
+        "variants.7.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69ea061b271bda8bdc80f5f4",
+      "productName": "Chicken and Sweet Potato",
+      "sku": "PROD103",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FChicken_SweetPotato_3_1783930612537_6dd2762fb10a.webp?alt=media&token=f00ea8e8-eb63-45e7-b91c-1c457be75d4b",
+      "imagePath": "products/variants/Chicken_SweetPotato_3_1783930612537_6dd2762fb10a.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69ea0898271bda8bdc80f850",
+      "productName": "Lamb Chops: 100% Real & Preservatives Free Natural Dog Treats",
+      "sku": "PROD104",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FLambChops_3_1783930619235_615cc2f8d724.webp?alt=media&token=7b1a4ec2-2652-4513-b9f9-a9154f5b1ffc",
+      "imagePath": "products/variants/LambChops_3_1783930619235_615cc2f8d724.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69ea0b7a271bda8bdc80f8d8",
+      "productName": "Carob Brownie Bites: Delicious & Healthy Treats for Dogs",
+      "sku": "PROD105",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FCarobBrownieBites_3_1783930622602_b53768cb894e.webp?alt=media&token=41ed70d9-119a-447b-abc8-262e4fc664c9",
+      "imagePath": "products/variants/CarobBrownieBites_3_1783930622602_b53768cb894e.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69ea0cb6271bda8bdc80f925",
+      "productName": "Blueberry Bliss: Natural, No-Preservatives Treats for Dogs",
+      "sku": "PROD106",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FBlueberryBliss_3_1783930625548_125aece5f8ac.webp?alt=media&token=d672155d-8592-4675-9ad3-dfb45253e901",
+      "imagePath": "products/variants/BlueberryBliss_3_1783930625548_125aece5f8ac.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69ea0dc8271bda8bdc80f972",
+      "productName": "Premium Natural Dog Treats – Nuts for Apples",
+      "sku": "PROD107",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FNutsforApples_3_1783930628623_87d603d51cd4.webp?alt=media&token=26923a84-3c88-4b41-9370-6056aa51a9ad",
+      "imagePath": "products/variants/NutsforApples_3_1783930628623_87d603d51cd4.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69ea13e0271bda8bdc80fc53",
+      "productName": "Neem & Apple Cider Shield Shampoo",
+      "sku": "PROD108",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FOatmeal_CoconutReliefShampoo-1_1783930632022_9d7f560ea201.webp?alt=media&token=fa8a5b03-400c-4c2e-b2fe-1458c5cfddaa",
+      "imagePath": "products/variants/Oatmeal_CoconutReliefShampoo-1_1783930632022_9d7f560ea201.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69ea14aa271bda8bdc80fca0",
+      "productName": "Oatmeal & Coconut Relief Shampoo",
+      "sku": "PROD109",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FOatmeal_CoconutReliefShampoo-1_1783930632022_9d7f560ea201.webp?alt=media&token=fa8a5b03-400c-4c2e-b2fe-1458c5cfddaa",
+      "imagePath": "products/variants/Oatmeal_CoconutReliefShampoo-1_1783930632022_9d7f560ea201.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69ea15c9271bda8bdc80fd1a",
+      "productName": "Premium Printed Webbing Leashes",
+      "sku": "PROD110",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FWebbingLeashes-black-1_1783930639365_056e96791991.webp?alt=media&token=b55b6ca2-79e8-4b41-96be-9f82e8272810",
+      "imagePath": "products/variants/WebbingLeashes-black-1_1783930639365_056e96791991.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69ea1b12271bda8bdc80fd85",
+      "productName": "Premium leather leashes",
+      "sku": "PROD111",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2Flatherleases1_1783930635986_2475e104c65b.webp?alt=media&token=efac2e04-1e8f-42fd-8a5e-21c12e22e720",
+      "imagePath": "products/variants/latherleases1_1783930635986_2475e104c65b.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69eafdda271bda8bdc810100",
+      "productName": "Basic Webbing Leashes",
+      "sku": "PROD113",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2FWebbingLeashes-black-1_1783930639365_056e96791991.webp?alt=media&token=b55b6ca2-79e8-4b41-96be-9f82e8272810",
+      "imagePath": "products/variants/WebbingLeashes-black-1_1783930639365_056e96791991.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "variants.5.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    },
+    {
+      "productId": "69eb01a1271bda8bdc81012d",
+      "productName": "Premium leather Collars",
+      "sku": "PROD114",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/petphoneapp-8e663.firebasestorage.app/o/products%2Fvariants%2Flatherleases1_1783930635986_2475e104c65b.webp?alt=media&token=efac2e04-1e8f-42fd-8a5e-21c12e22e720",
+      "imagePath": "products/variants/latherleases1_1783930635986_2475e104c65b.webp",
+      "confidence": 85,
+      "method": "SKU-override",
+      "dryRun": false,
+      "fieldsUpdated": [
+        "variants.0.media.images",
+        "variants.1.media.images",
+        "variants.2.media.images",
+        "variants.3.media.images",
+        "variants.4.media.images",
+        "variants.5.media.images",
+        "variants.6.media.images",
+        "variants.7.media.images",
+        "variants.8.media.images",
+        "variants.9.media.images",
+        "variants.10.media.images",
+        "variants.11.media.images",
+        "variants.12.media.images",
+        "variants.13.media.images",
+        "variants.14.media.images",
+        "variants.15.media.images",
+        "variants.16.media.images",
+        "variants.17.media.images",
+        "variants.18.media.images",
+        "variants.19.media.images",
+        "variants.20.media.images",
+        "variants.21.media.images",
+        "variants.22.media.images",
+        "variants.23.media.images",
+        "variants.24.media.images",
+        "variants.25.media.images",
+        "variants.26.media.images",
+        "variants.27.media.images",
+        "defaultMedia.thumbnail.url",
+        "defaultMedia.thumbnail.path"
+      ]
+    }
+  ],
+  "skipped": [],
+  "notFound": [],
+  "errors": []
+}

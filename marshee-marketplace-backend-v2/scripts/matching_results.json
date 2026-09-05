@@ -1,0 +1,815 @@
+{
+  "matches": [
+    {
+      "productId": "690c915fbff3d2daff2e74f2",
+      "productName": "BREEDERS CLUB - ULTIMATE DIET - ENERGY+ (ALL BREEDS)",
+      "sku": "BREEDERS-CLUB-ENERGY-18KG",
+      "bestMatch": "products/BreedersPack_UltimateDiet-Energy_-Back_Flat.png_juupon.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 57,
+      "allMatches": [
+        "products/BreedersPack_UltimateDiet-Energy_-Back_Flat.png_juupon.webp (57%)",
+        "products/BreedersPack_UltimateDiet-Energy__Flat.png_iihrta.webp (57%)"
+      ]
+    },
+    {
+      "productId": "690ed2c1d3dd2b0131ad4ce6",
+      "productName": "CHICKEN HEART TREATS",
+      "sku": "CHICKEN-HEART-TREATS",
+      "bestMatch": "products/R4P-TreatsPack_ChickenHeart_Back_Flat.webp_wotm9z.png",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 100,
+      "allMatches": [
+        "products/R4P-TreatsPack_ChickenHeart_Back_Flat.webp_wotm9z.png (100%)",
+        "products/R4P-TreatsPack_ChickenHeart_Front_Flat.webp_mlcljj.png (100%)",
+        "products/variants/ChickenandSweetPotatoTreats_2_1783930613879_8e282c101774.webp (67%)",
+        "products/variants/ChickenandSweetPotatoTreats_3_1783930614589_3f215a94680c.webp (67%)",
+        "products/variants/ChickenandSweetPotatoTreats_4_1783930615309_5a5424e932ec.webp (67%)"
+      ]
+    },
+    {
+      "productId": "691d89721233b508acdcb330",
+      "productName": "MOE PUPPY Keratin+ Hairfall Shampoo for Dogs & Cats",
+      "sku": "MOE-PUPPY-KERATIN-SHAMPOO",
+      "bestMatch": "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 75,
+      "allMatches": [
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp (75%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_1_jdybmz.png (75%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_2_dxbkzl.png (75%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_3_f9hywl.png (75%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_4_ciiflk.png (75%)"
+      ]
+    },
+    {
+      "productId": "691da9e3be2d81413e442c25",
+      "productName": "4 in 1 Conditioner for Dogs & Cats",
+      "sku": "MOE-PUPPY-4IN1-CONDITIONER",
+      "bestMatch": "products/4_in_1_Conditioner_for_Dogs_Cats.png_zclp8a.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 100,
+      "allMatches": [
+        "products/4_in_1_Conditioner_for_Dogs_Cats.png_zclp8a.webp (100%)",
+        "products/4_in_1_Conditioner_for_Dogs_Cats_1_cckpmg.png (100%)",
+        "products/4_in_1_Conditioner_for_Dogs_Cats_2_oz9d2k.png (100%)",
+        "products/4_in_1_Conditioner_for_Dogs_Cats_3_t5ahnu.png (100%)",
+        "products/4_in_1_Conditioner_for_Dogs_Cats_4_yquw7i.png (100%)"
+      ]
+    },
+    {
+      "productId": "691ec65032c7f40da4a667cb",
+      "productName": "Xtra Nourish Medicated Shampoo for Dogs & Cats | 900ml",
+      "sku": "MOE-PUPPY-XTRA-NOURISH-SHAMPOO-900ML",
+      "bestMatch": "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 50,
+      "allMatches": [
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp (50%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_1_jdybmz.png (50%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_2_dxbkzl.png (50%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_3_f9hywl.png (50%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_4_ciiflk.png (50%)"
+      ]
+    },
+    {
+      "productId": "690ec61367885014c0986997",
+      "productName": "ULTIMATE DIET - ENERGY+",
+      "sku": "ULTIMATE-DIET-ENERGY-PLUS",
+      "bestMatch": "products/BreedersPack_UltimateDiet-Energy_-Back_Flat.png_juupon.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 100,
+      "allMatches": [
+        "products/BreedersPack_UltimateDiet-Energy_-Back_Flat.png_juupon.webp (100%)",
+        "products/BreedersPack_UltimateDiet-Energy__Flat.png_iihrta.webp (100%)",
+        "products/BreedersPack_UltimateDiet-Puppy-Back_Flat_owgqem.png (67%)",
+        "products/BreedersPack_UltimateDiet-Puppy_Flat.png_qjjhu3.webp (67%)",
+        "products/Ultimate-diet-var3-1.webp (67%)"
+      ]
+    },
+    {
+      "productId": "691ebc8732c7f40da4a667c4",
+      "productName": "Keratin+ Hairfall Shampoo for Dogs & Cats 900ml",
+      "sku": "MOE-PUPPY-KERATIN-SHAMPOO-900ML",
+      "bestMatch": "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 86,
+      "allMatches": [
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp (86%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_1_jdybmz.png (86%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_2_dxbkzl.png (86%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_3_f9hywl.png (86%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_4_ciiflk.png (86%)"
+      ]
+    },
+    {
+      "productId": "694b92065e3ea7f8766a74fa",
+      "productName": "GoodGut+",
+      "sku": "AP-2-GG",
+      "bestMatch": "products/goodgut+01.jpg",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 100,
+      "allMatches": [
+        "products/goodgut+01.jpg (100%)",
+        "products/goodgut+02.jpg (100%)"
+      ]
+    },
+    {
+      "productId": "690c766ebff3d2daff2e6f84",
+      "productName": "TASTER PACK - PUPPY",
+      "sku": "TASTER-PACK-PUPPY",
+      "bestMatch": "products/100G_TasterPack_Puppy_Back_1.webp.png",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 100,
+      "allMatches": [
+        "products/100G_TasterPack_Puppy_Back_1.webp.png (100%)",
+        "products/100G_TasterPack_Puppy_Front_1.webp (100%)",
+        "products/BreedersPack_UltimateDiet-Puppy-Back_Flat_owgqem.png (67%)",
+        "products/BreedersPack_UltimateDiet-Puppy_Flat.png_qjjhu3.webp (67%)",
+        "products/taster-pack-adult.webp (67%)"
+      ]
+    },
+    {
+      "productId": "690d9de320e30f58044c7177",
+      "productName": "ULTIMATE DIET - TOY & SMALL ADULT",
+      "sku": "ULTIMATE-DIET-TOY-SMALL-ADULT",
+      "bestMatch": "products/Toy-small-adult02webp.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 60,
+      "allMatches": [
+        "products/Toy-small-adult02webp.webp (60%)",
+        "products/toy-small-adult01.webp (60%)"
+      ]
+    },
+    {
+      "productId": "690daa3920e30f58044c732f",
+      "productName": "ULTIMATE DIET - MEDIUM & MAXI PUPPY",
+      "sku": "ULTIMATE-DIET-MEDIUM-MAXI-PUPPY",
+      "bestMatch": "products/BreedersPack_UltimateDiet-Puppy-Back_Flat_owgqem.png",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 60,
+      "allMatches": [
+        "products/BreedersPack_UltimateDiet-Puppy-Back_Flat_owgqem.png (60%)",
+        "products/BreedersPack_UltimateDiet-Puppy_Flat.png_qjjhu3.webp (60%)"
+      ]
+    },
+    {
+      "productId": "690ec47d67885014c098683e",
+      "productName": "ULTIMATE DIET - TOY & SMALL PUPPY",
+      "sku": "ULTIMATE-DIET-TOY-SMALL-PUPPY",
+      "bestMatch": "products/BreedersPack_UltimateDiet-Puppy-Back_Flat_owgqem.png",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 60,
+      "allMatches": [
+        "products/BreedersPack_UltimateDiet-Puppy-Back_Flat_owgqem.png (60%)",
+        "products/BreedersPack_UltimateDiet-Puppy_Flat.png_qjjhu3.webp (60%)"
+      ]
+    },
+    {
+      "productId": "690c70f5c0da757a0fa2dc58",
+      "productName": "TASTER PACK - ADULT",
+      "sku": "TASTER-PACK-ADULT",
+      "bestMatch": "products/taster-pack-adult.webp",
+      "matchMethod": "SKU",
+      "matchScore": 100,
+      "allMatches": [
+        "products/taster-pack-adult.webp (100%)",
+        "products/taster-pack-adult02.webp (100%)",
+        "products/100G_TasterPack_Puppy_Back_1.webp.png (67%)",
+        "products/100G_TasterPack_Puppy_Front_1.webp (67%)"
+      ]
+    },
+    {
+      "productId": "690c8c12bff3d2daff2e744c",
+      "productName": "PROBIOTIC GROOMING BUTTER",
+      "sku": "PROBIOTIC-GROOMING-BUTTER-50G",
+      "bestMatch": "products/grooming-butter-front.jpg.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 67,
+      "allMatches": [
+        "products/grooming-butter-front.jpg.webp (67%)"
+      ]
+    },
+    {
+      "productId": "690d93d620e30f58044c6d41",
+      "productName": "PROBIOTIC FLOOR CLEANER",
+      "sku": "PROBIOTIC-FLOOR-CLEANER-1KG",
+      "bestMatch": "products/FLOOR_CLEANER_-_INDGREDIENTS.png.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 67,
+      "allMatches": [
+        "products/FLOOR_CLEANER_-_INDGREDIENTS.png.webp (67%)",
+        "products/Floor_Cleaner_-Front.png.webp (67%)"
+      ]
+    },
+    {
+      "productId": "690da12920e30f58044c72aa",
+      "productName": "ULTIMATE DIET - LARGE & GIANT PUPPY",
+      "sku": "ULTIMATE-DIET-LG-GIANT-PUPPY",
+      "bestMatch": "products/BreedersPack_UltimateDiet-Puppy-Back_Flat_owgqem.png",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 60,
+      "allMatches": [
+        "products/BreedersPack_UltimateDiet-Puppy-Back_Flat_owgqem.png (60%)",
+        "products/BreedersPack_UltimateDiet-Puppy_Flat.png_qjjhu3.webp (60%)",
+        "products/large-giant-puppy.webp (60%)",
+        "products/large-giant-puppy02.webp (60%)"
+      ]
+    },
+    {
+      "productId": "690eceef67885014c0986c67",
+      "productName": "MEAL TOPPER GRAVY",
+      "sku": "MEAL-TOPPER-GRAVY",
+      "bestMatch": "products/Meal-topper-r4p.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 67,
+      "allMatches": [
+        "products/Meal-topper-r4p.webp (67%)"
+      ]
+    },
+    {
+      "productId": "690ed0f567885014c0986e6a",
+      "productName": "CHICKEN LIVER TREATS",
+      "sku": "CHICKEN-LIVER-TREATS",
+      "bestMatch": "products/R4P-TreatsPack_ChickenHeart_Back_Flat.webp_wotm9z.png",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 67,
+      "allMatches": [
+        "products/R4P-TreatsPack_ChickenHeart_Back_Flat.webp_wotm9z.png (67%)",
+        "products/R4P-TreatsPack_ChickenHeart_Front_Flat.webp_mlcljj.png (67%)",
+        "products/chicken-liver-treat01.jpg (67%)",
+        "products/chicken-liver-treat02.jpg (67%)",
+        "products/variants/ChickenandSweetPotatoTreats_2_1783930613879_8e282c101774.webp (67%)"
+      ]
+    },
+    {
+      "productId": "691dadf9be2d81413e4441da",
+      "productName": "Rinse Free - Dry Shampoo for Dogs & Cats",
+      "sku": "MOE-PUPPY-RINSE-FREE-DRY-SHAMPOO",
+      "bestMatch": "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 57,
+      "allMatches": [
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats.png_nf79j6.webp (57%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_1_jdybmz.png (57%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_2_dxbkzl.png (57%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_3_f9hywl.png (57%)",
+        "products/Keratin_Hairfall_Shampoo_for_Dogs_Cats_4_ciiflk.png (57%)"
+      ]
+    },
+    {
+      "productId": "6995ba8bbe20e8385afa04b9",
+      "productName": "Liverlicious ( Pumpkin ) ",
+      "sku": "LPC80",
+      "bestMatch": "products/O'pumpkin.jpg",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 50,
+      "allMatches": [
+        "products/O'pumpkin.jpg (50%)",
+        "products/pumpkin-paws4greens.jpg.webp (50%)"
+      ]
+    },
+    {
+      "productId": "6995c230be20e8385afa05e2",
+      "productName": "Lamb Medley ",
+      "sku": "LM85",
+      "bestMatch": "products/variants/LambChops_3_1783930619235_615cc2f8d724.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 50,
+      "allMatches": [
+        "products/variants/LambChops_3_1783930619235_615cc2f8d724.webp (50%)",
+        "products/variants/LambChops_4_1783930619912_a4de817933b7.webp (50%)"
+      ]
+    },
+    {
+      "productId": "69ea061b271bda8bdc80f5f4",
+      "productName": "Chicken and Sweet Potato",
+      "sku": "PROD103",
+      "bestMatch": "products/variants/ChickenandSweetPotatoTreats_2_1783930613879_8e282c101774.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 100,
+      "allMatches": [
+        "products/variants/ChickenandSweetPotatoTreats_2_1783930613879_8e282c101774.webp (100%)",
+        "products/variants/ChickenandSweetPotatoTreats_3_1783930614589_3f215a94680c.webp (100%)",
+        "products/variants/ChickenandSweetPotatoTreats_4_1783930615309_5a5424e932ec.webp (100%)",
+        "products/variants/Chicken_SweetPotato_3_1783930612537_6dd2762fb10a.webp (75%)",
+        "products/variants/Chicken_SweetPotato_4_1783930613154_c7203dd15d0e.webp (75%)"
+      ]
+    },
+    {
+      "productId": "69ea14aa271bda8bdc80fca0",
+      "productName": "Oatmeal & Coconut Relief Shampoo",
+      "sku": "PROD109",
+      "bestMatch": "products/variants/Oatmeal_CoconutReliefShampoo-1_1783930632022_9d7f560ea201.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 100,
+      "allMatches": [
+        "products/variants/Oatmeal_CoconutReliefShampoo-1_1783930632022_9d7f560ea201.webp (100%)",
+        "products/variants/Oatmeal_Shampoo_Carousel-03_1783930630403_bc9e9c466c7a.webp (50%)",
+        "products/variants/Oatmeal_Shampoo_Carousel-03_1783930632321_9086a2239b02.webp (50%)"
+      ]
+    },
+    {
+      "productId": "69ea15c9271bda8bdc80fd1a",
+      "productName": "Premium Printed Webbing Leashes",
+      "sku": "PROD110",
+      "bestMatch": "products/variants/WebbingLeashes-black-1_1783930639365_056e96791991.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 50,
+      "allMatches": [
+        "products/variants/WebbingLeashes-black-1_1783930639365_056e96791991.webp (50%)",
+        "products/variants/WebbingLeashes-black_1783930639162_595b94a760f5.webp (50%)",
+        "products/variants/WebbingLeashes-green-1_1783930639880_bd4a191bf641.webp (50%)",
+        "products/variants/WebbingLeashes-green_1783930639602_b9f96581c736.webp (50%)",
+        "products/variants/WebbingLeashes-maroon-1_1783930640700_df39cfe3223f.webp (50%)"
+      ]
+    },
+    {
+      "productId": "69eafdda271bda8bdc810100",
+      "productName": "Basic Webbing Leashes",
+      "sku": "PROD113",
+      "bestMatch": "products/variants/WebbingLeashes-black-1_1783930639365_056e96791991.webp",
+      "matchMethod": "Fuzzy Name",
+      "matchScore": 67,
+      "allMatches": [
+        "products/variants/WebbingLeashes-black-1_1783930639365_056e96791991.webp (67%)",
+        "products/variants/WebbingLeashes-black_1783930639162_595b94a760f5.webp (67%)",
+        "products/variants/WebbingLeashes-green-1_1783930639880_bd4a191bf641.webp (67%)",
+        "products/variants/WebbingLeashes-green_1783930639602_b9f96581c736.webp (67%)",
+        "products/variants/WebbingLeashes-maroon-1_1783930640700_df39cfe3223f.webp (67%)"
+      ]
+    }
+  ],
+  "noMatches": [
+    {
+      "id": "68d521b72e8cbc652705442a",
+      "sku": "B0F9THH6DT",
+      "name": "Paws for Greens Dog Ice Cream Premix 100% Natural Pet Treats Premium & Healthy Cat Ice Cream Prebiotics for Digestive Ice Cream Health Easy to Prepare & Store"
+    },
+    {
+      "id": "68d528b22e8cbc6527054451",
+      "sku": "B089558FY3",
+      "name": "Basil Woody Walk Mild & Fragranced Perfume for Pets, Dog Grooming Spray for Sensitive Skin, Comfort with Bacterial Protection on Body and Softer Coat (Size - 130ml)"
+    },
+    {
+      "id": "68d529e22e8cbc6527054458",
+      "sku": "B08954D1PW",
+      "name": "Basil Dental Care Twisted Chew Sticks Pets Treats and Chews, Light and Healthy for Dogs (200gms in a Packet) Dental Cavities and Cleans - Pack of 1"
+    },
+    {
+      "id": "68d534862e8cbc652705448b",
+      "sku": "B0DPX7C1N1",
+      "name": "BASIL Royal Yet Noble No Tick Herbal Pet Shampoo, 500ml | Tick & Flea Removal | Itch Relief, Paraben-Free | Softens, Strengthens & Adds Shine to Fur"
+    },
+    {
+      "id": "68d539a22e8cbc65270544a3",
+      "sku": "B089525GMZ",
+      "name": "Basil Softy Pet Paw Butter Cream, Winter Care Enriched with Almond Oil | Heals, Moisturizes & Softens Dry Chapped Paws"
+    },
+    {
+      "id": "68d65f1ec483d47eb714a14d",
+      "sku": "B0DQ1NRD85",
+      "name": "BASIL Royal Yet Noble Cinnamon Herbal Mouth Freshening Spray, Completely Safe for Pets, Easy Spray"
+    },
+    {
+      "id": "68d66223c483d47eb714a161",
+      "sku": "B098QZK46H",
+      "name": "Basil Gluten Free Treats & Chews (Guilt-Free) Lollipop, Layered with Chicken for Dogs, Puppies, Diet Treats for Pets"
+    },
+    {
+      "id": "69088568b87c69950dd8bed7",
+      "sku": "VEG-DOG-FOOD-3KG",
+      "name": "Veg Dog Food Plant-Based Meat-Free for All Breeds Dry Kibble high Protein Complete Nutrition special for puppy"
+    },
+    {
+      "id": "690d8d0120e30f58044c6ca5",
+      "sku": "BREEDERS-CLUB-PUPPY-18KG",
+      "name": "BREEDERS CLUB - PUPPY (ALL BREEDS)"
+    },
+    {
+      "id": "690d9b6720e30f58044c70ed",
+      "sku": "ULTIMATE-DIET-MEDIUM-MAXI-ADULT",
+      "name": "ULTIMATE DIET - MEDIUM & MAXI ADULT"
+    },
+    {
+      "id": "690eca4467885014c0986b77",
+      "sku": "YUM-BOOST-FOOD-TOPPER",
+      "name": "YUM BOOST - FOOD TOPPER"
+    },
+    {
+      "id": "691ecc2e32c7f40da4a66801",
+      "sku": "MOE-PUPPY-DEODORIZER",
+      "name": "Moe Puppy Deodorizer"
+    },
+    {
+      "id": "68d527a02e8cbc6527054449",
+      "sku": "B07TP8NHBM",
+      "name": "BASIL Royal Yet Noble Pet Shampoo, Silky Soft Conditioning Shampoo (250 Milliliter) for Dogs & Puppies Deep Cleansing, Skin Friendly, Freshening Fragrance, Mild On Skin & Paraben Free"
+    },
+    {
+      "id": "68d534c32e8cbc6527054497",
+      "sku": "B08955QSJG",
+      "name": "Basil Silky Soft Conditioning Shampoo"
+    },
+    {
+      "id": "68d537cf2e8cbc652705449b",
+      "sku": "B0B1WQ2RLX",
+      "name": "Basil Moisturising Foam Dry Bath Shampoo for Dogs & Cats | No-Rinse Formula | Gentle Cleansing & Fresh Geranium Scent | Quick & Easy Grooming for Pets | Ideal for Sensitive Skin"
+    },
+    {
+      "id": "68d539bd2e8cbc65270544a7",
+      "sku": "B09SYXKXRC",
+      "name": "Basil Woody Walk Mild & Fragranced Perfume for Dogs & Pets Comfort with Bacterial Protection on Body and Softer Coat"
+    },
+    {
+      "id": "68d62f4557604b4ed21d236f",
+      "sku": "B09SYX36LM",
+      "name": "Basil Garden Fresh Mild & Fragranced Perfume for Pets Comfort with Bacterial Protection on Body and Softer Coat"
+    },
+    {
+      "id": "68dfbbd93a1ae3926908273a",
+      "sku": "B0DPWY528M",
+      "name": "Basil Royal Yet Noble Gluten Free Treats & Chews (Guilt-Free) Turtle with Peanut Butter, Layered with Chicken for Dogs, Puppies, Diet Treats for Pets"
+    },
+    {
+      "id": "690b3831989295bf1683af44",
+      "sku": "VEG-WET-DOG-MIXVEGGIE",
+      "name": "Veg Ready to Eat Wet Dog Food Plant & Based Vegan Pet Food Preservative-Free (Mix Veggie 100g+100g Pack)"
+    },
+    {
+      "id": "690b50c7d20bfd6726b3534f",
+      "sku": "VEG-WET-DOG-PEAS",
+      "name": "Veg Ready to Eat Wet Dog Food Plant & Based Vegan Pet Food Preservative-Free (Peas 100g+100g Pack)"
+    },
+    {
+      "id": "690c861abff3d2daff2e73d6",
+      "sku": "PROBIOTIC-SHAMPOO-BAR-SHORT-HAIR",
+      "name": "PROBIOTIC SHAMPOO BAR FOR SHORT HAIRED DOGS"
+    },
+    {
+      "id": "690d88e099635108008760ff",
+      "sku": "PROBIOTIC-SHAMPOO-LIQUID-LONG-HAIR",
+      "name": "PROBIOTIC SHAMPOO LIQUID FOR LONG HAIRED DOGS"
+    },
+    {
+      "id": "690ec75367885014c0986a11",
+      "sku": "HOME-FOOD-NUTRI-BOOST-ADULT",
+      "name": "HOME FOOD NUTRI BOOST - ADULT"
+    },
+    {
+      "id": "691d9635be2d81413e43323e",
+      "sku": "MOE-PUPPY-EAR-CARE",
+      "name": "MOE PUPPY Ear Care+ for Dogs & Cats"
+    },
+    {
+      "id": "691d9eb0be2d81413e435416",
+      "sku": "MOE-PUPPY-ANTI-TICK-SPRAY",
+      "name": "MOE PUPPY Anti-Tick Spray - For Dogs and Cats"
+    },
+    {
+      "id": "691eb2d43135ff0b00b67096",
+      "sku": "MOE-PUPPY-MULTI-ACTION-DISINFECTANT",
+      "name": "Multi-Action Disinfectant - Pet Safe Disinfectant Spray"
+    },
+    {
+      "id": "691eb5e532c7f40da4a66693",
+      "sku": "MOE-PUPPY-PAW-BALM",
+      "name": "Paw Balm - Paw Cream for Dogs & Cats"
+    },
+    {
+      "id": "691eb95032c7f40da4a667c0",
+      "sku": "MOE-PUPPY-TICK-DEFENSE-SHAMPOO",
+      "name": "Tick Defense - Tick Free Shampoo for Dogs and Cats"
+    },
+    {
+      "id": "691ec82932c7f40da4a667fd",
+      "sku": "MOE-PUPPY-2IN1-SHAMPOO-CONDITIONER-900ML",
+      "name": "2 in 1 Shampoo plus Conditioner for Pets | 900ml"
+    },
+    {
+      "id": "694a7b307e95c184f1ac2276",
+      "sku": "AP-1-HYCC",
+      "name": "AyurPet Yak Cheese Chews for Dogs – 6-Hour Long-Lasting Dental Chew, Joint Support"
+    },
+    {
+      "id": "694bad035e3ea7f8766a74fe",
+      "sku": "AP-3-HOJ",
+      "name": "AyurPet Hip-O-Joint+ Joint Support Drops for Dogs with Glucosamine – Ayurvedic Mobility Supplement 175 ml"
+    },
+    {
+      "id": "68d5014fa4354b83024bc7ba",
+      "sku": "PFG20240012",
+      "name": "PAWS FOR GREENS Multivitamin Vegan Dog Food 100% Natural Plant-Based Meat-Free for All Breeds This Vet-formulated Veg Dry Kibble high Protein and Fiber Providing Complete Nutrition 1kg Pack"
+    },
+    {
+      "id": "68d51a4e4622437ac9a9015b",
+      "sku": "PFGWDF02",
+      "name": "PAWS FOR GREENS Wet Dog Food Real Veggies Ready to Eat Pet Food Human-Grade Ingredients, 100% Natural & Preservative-Free Veg Dog Food for Puppies & Adults"
+    },
+    {
+      "id": "68d52c722e8cbc6527054469",
+      "sku": "B0895252LN",
+      "name": "Basil Pet Treats & Chews Soft & Tasty Calcium Bones for Pets of All Ages (100gm in 1 Packet) Regular Needs - Pack of 1"
+    },
+    {
+      "id": "68d534902e8cbc652705448f",
+      "sku": "B07TSWZK7X",
+      "name": "BASIL Royal Yet Noble Oat & Aloe Moisturizing Shampoo|Dog Shampoo for Sensitive Skin|Cleanse, Detangle & Moisturize for Smooth & Itch-Free Hair with Aloe Vera|Paraben-Free"
+    },
+    {
+      "id": "68d65f07c483d47eb714a149",
+      "sku": "B09RZV5SJP",
+      "name": "BASIL SPEARMINT Herbal Mouth Freshening Spray, Completely Safe for Pets, Easy spray"
+    },
+    {
+      "id": "68d661dfc483d47eb714a159",
+      "sku": "B0DRVX1BT6",
+      "name": "Basil Calcium Milk 360* Dental Chew Treat for Dogs & Puppies"
+    },
+    {
+      "id": "69089ab1b87c69950dd8bedb",
+      "sku": "VEG-ADULT-DOG-1KG",
+      "name": "Veg Adult Dog Food – High Protein, Plant-Based, Meat-Free Dry Dog Food Kibble for All Breeds | Complete Nutrition"
+    },
+    {
+      "id": "69089b66b87c69950dd8bedf",
+      "sku": "VEG-WET-DOG-PUMPKIN",
+      "name": "Veg Ready to Eat Wet Dog Food Plant & Based Vegan Pet Food Preservative-Free (Pumpkin 100g+100g Pack)"
+    },
+    {
+      "id": "690c6212c0da757a0fa2dc54",
+      "sku": "VEG-DOG-TREATS-PB",
+      "name": "Dog Treats Plant-Based Healthy Vegan Biscuits for Dogs with Peanut Butter & Banana-100gm"
+    },
+    {
+      "id": "690c7deabff3d2daff2e70e8",
+      "sku": "PROBIOTIC-COAT-CLEANSER-200ML",
+      "name": "PROBIOTIC DAILY COAT CLEANSER"
+    },
+    {
+      "id": "690d94bb20e30f58044c6e43",
+      "sku": "BREEDERS-CLUB-ADULT-18KG",
+      "name": "BREEDERS CLUB - ADULT (ALL BREEDS)"
+    },
+    {
+      "id": "690d965820e30f58044c6e92",
+      "sku": "ULTIMATE-DIET-LG-GIANT-ADULT",
+      "name": "ULTIMATE DIET - LARGE & GIANT ADULT"
+    },
+    {
+      "id": "691d98b4be2d81413e4344c9",
+      "sku": "MOE-PUPPY-XTRA-NOURISH-SHAMPOO",
+      "name": "MOE PUPPY Xtra Nourish Medicated Shampoo for Dogs & Cats"
+    },
+    {
+      "id": "691da24bbe2d81413e4381d7",
+      "sku": "MOE-PUPPY-DENTAL-SPRAY",
+      "name": "MOE PUPPY Dental Spray for Dogs & Cats"
+    },
+    {
+      "id": "691da6e2be2d81413e43f0ae",
+      "sku": "MOE-PUPPY-FOAM-SHAMPOO-150ML",
+      "name": "Puppy Foam Shampoo with Oatmeal & Aloe Vera (150ml)"
+    },
+    {
+      "id": "68d52b742e8cbc6527054465",
+      "sku": "B09WYBD4LD",
+      "name": "BASIL Cat Teaser Stick with Feather and Bell + Teasing Stick with Butterfly and Bell Toys for Pets Animal"
+    },
+    {
+      "id": "68d52dc42e8cbc652705446d",
+      "sku": "B0BFJ6322V",
+      "name": "Basil Pets Fluffy Fur Pet Conditioner Using Almond and Coconut Oils for Hair Shine, Smelling Fresh (300ml) for Dogs, Cats, Kitten & Puppies Cleansing, Skin Friendly"
+    },
+    {
+      "id": "68d52ec22e8cbc6527054477",
+      "sku": "B0DVLTFCR2",
+      "name": "Groom My Pet Dog Paw Cleaner | Soft Silicone Bristles for Quick Cleaning | Portable Paw Washing Cup | Wash Away Dirt, Mud & Debris for Large Dog | color may vary"
+    },
+    {
+      "id": "68d5337c2e8cbc652705447f",
+      "sku": "PFGWDF-MIXVEG",
+      "name": "PAWS FOR GREENS Wet Dog Food Veggie Mix Ready to Eat Pet Food Human-Grade Ingredients, 100% Natural & Preservative-Free Veg Dog Food for Puppies & Adults"
+    },
+    {
+      "id": "68d5338b2e8cbc6527054483",
+      "sku": "B0DVLTFCR3",
+      "name": "Pawfectly Made Fresh Wet Dog Food, Egg & Veggies | Egg O' Pumpkin"
+    },
+    {
+      "id": "68d534562e8cbc6527054487",
+      "sku": "014-500ML",
+      "name": "BASIL Royal Yet Noble Silky Soft Conditioning Shampoo for Dogs|DeepCleansing,Conditioning,Detangling & Moisturizing Formula,Nourishing BasilOil to Promote Healthy Skin&Shiny Coats"
+    },
+    {
+      "id": "68d534ae2e8cbc6527054493",
+      "sku": "B07TP9MC56",
+      "name": "BASIL Royal Yet Noble Anti-Dandruff & Itch Shampoo for Dogs|Cleans, Conditions, Detangles, and Moisturizes |Natural Basil Oil |for All Coat Types|Paraben-Free & Cruelty-Free"
+    },
+    {
+      "id": "68d66136c483d47eb714a155",
+      "sku": "B07R68XZV8",
+      "name": "Basil Fresh Breath Mouth Refreshing Chewy Bites 360 Dental Chews for All Dogs Flexible Dental Bone"
+    },
+    {
+      "id": "68d661fac483d47eb714a15d",
+      "sku": "B07R4PL9VQ",
+      "name": "BASIL Royal Yet Noble Dog Treats (Dental Stick (Dental Care+Immune Care)"
+    },
+    {
+      "id": "690d8f5b20e30f58044c6d35",
+      "sku": "BREEDERS-CLUB-NUTRITION-BOOSTER-12KG",
+      "name": "BREEDERS CLUB - NUTRITION BOOSTER (ALL BREEDS ADULT)"
+    },
+    {
+      "id": "690d926920e30f58044c6d3d",
+      "sku": "PROBIOTIC-KENNEL-WASH-5KG",
+      "name": "PROBIOTIC KENNEL WASH"
+    },
+    {
+      "id": "691db1f0be2d81413e445224",
+      "sku": "MOE-PUPPY-2IN1-SHAMPOO-CONDITIONER",
+      "name": "2 in 1 Shampoo plus Conditioner for Pets"
+    },
+    {
+      "id": "691ecd3d32c7f40da4a66807",
+      "sku": "MOE-PUPPY-FOAM-WASH-CATS",
+      "name": "Moe Puppy Foam Wash for Cats – Cleansing, Conditioning & Odor Removal | Safe for Kittens (300 ml)"
+    },
+    {
+      "id": "692d5fa9bd3b253babc518f5",
+      "sku": "BASIL-COLLAGEN-SUPPLEMENT",
+      "name": "Collagen Supplement for Dogs & Cats – Promotes Mobility, Skin Elasticity & Fur Shine (15 Sachets)"
+    },
+    {
+      "id": "6995a11cbe20e8385afa00eb",
+      "sku": "MP01",
+      "name": "Mini Paws Chick A Doodle Puppy Dog Wet Food\t"
+    },
+    {
+      "id": "6995bc2abe20e8385afa055d",
+      "sku": "LCC80",
+      "name": "Liverlicious ( Carrot ) "
+    },
+    {
+      "id": "6995bdd6be20e8385afa0580",
+      "sku": "CK85",
+      "name": "Purrfect Chicken Delight "
+    },
+    {
+      "id": "6995bf17be20e8385afa05a3",
+      "sku": "FF85",
+      "name": "Fin- tastic Fish Feast "
+    },
+    {
+      "id": "6995c3c8be20e8385afa0605",
+      "sku": "GG85",
+      "name": "Goat Goodness "
+    },
+    {
+      "id": "699fefcabc716f0167929645",
+      "sku": "CC001",
+      "name": "Never Lose Your Cat Again -Smart Airtag Collar Built for Safety"
+    },
+    {
+      "id": "69a0212face385d1b56d4979",
+      "sku": "DC001",
+      "name": "Never Lose Your Dog Again -Smart Airtag Collar Built for Safety (Premium)"
+    },
+    {
+      "id": "69a1ce7eab53c12d187e892e",
+      "sku": "DC003",
+      "name": "Never Lose Your Dog Again -Smart Airtag Collar Built for Safety (Luxury) "
+    },
+    {
+      "id": "69a1d57bab53c12d187e8a4e",
+      "sku": "DC002",
+      "name": "Never Lose Your Dog Again -Smart Airtag Collar Built for Safety (Ultra Leather)"
+    },
+    {
+      "id": "69e9c2d9794e2616c4f0f6da",
+      "sku": "DJ001",
+      "name": "Green washed Collar detail Dog Jacket and Bandana"
+    },
+    {
+      "id": "69e9c6d95fd1b07870411758",
+      "sku": "PROD098",
+      "name": "Beige Printed Side Panel Denim Dog Jacket and Bandana"
+    },
+    {
+      "id": "69e9de315fd1b078704118a4",
+      "sku": "PROD099",
+      "name": "Black Contrast Stripe Dog Jacket and Bandana"
+    },
+    {
+      "id": "69e9dff45fd1b078704118d5",
+      "sku": "PROD100",
+      "name": "Two-Tone Blue Denim Jetsetter Dog Jacket"
+    },
+    {
+      "id": "69e9e1d95fd1b07870411907",
+      "sku": "PROD101",
+      "name": "Red Sweateshirt with Compass print and Bandana"
+    },
+    {
+      "id": "69e9e3ce5fd1b07870411938",
+      "sku": "PROD102",
+      "name": "Black and Grey Patched Urban Dog Shaket"
+    },
+    {
+      "id": "69ea0898271bda8bdc80f850",
+      "sku": "PROD104",
+      "name": "Lamb Chops: 100% Real & Preservatives Free Natural Dog Treats"
+    },
+    {
+      "id": "69ea0b7a271bda8bdc80f8d8",
+      "sku": "PROD105",
+      "name": "Carob Brownie Bites: Delicious & Healthy Treats for Dogs"
+    },
+    {
+      "id": "69ea0cb6271bda8bdc80f925",
+      "sku": "PROD106",
+      "name": "Blueberry Bliss: Natural, No-Preservatives Treats for Dogs"
+    },
+    {
+      "id": "69ea0dc8271bda8bdc80f972",
+      "sku": "PROD107",
+      "name": "Premium Natural Dog Treats – Nuts for Apples"
+    },
+    {
+      "id": "69ea13e0271bda8bdc80fc53",
+      "sku": "PROD108",
+      "name": "Neem & Apple Cider Shield Shampoo"
+    },
+    {
+      "id": "69ea1b12271bda8bdc80fd85",
+      "sku": "PROD111",
+      "name": "Premium leather leashes"
+    },
+    {
+      "id": "69eb01a1271bda8bdc81012d",
+      "sku": "PROD114",
+      "name": "Premium leather Collars"
+    },
+    {
+      "id": "69fb41f62ed2eb6944db19ee",
+      "sku": "PROD115",
+      "name": "Bone Tone (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb4a1a2ed2eb6944db1ae9",
+      "sku": "PROD116",
+      "name": "PALLID (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb4b9f2ed2eb6944db1b48",
+      "sku": "PROD117",
+      "name": "COUGHEE (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb4c6b2ed2eb6944db1bc9",
+      "sku": "PROD118",
+      "name": "ROAR (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb4d262ed2eb6944db1bec",
+      "sku": "PROD119",
+      "name": "PEE WEE (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb4db32ed2eb6944db1c0f",
+      "sku": "PROD120",
+      "name": "POOP SHOOT (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb4e3a2ed2eb6944db1c32",
+      "sku": "PROD121",
+      "name": "LIVER LOVER (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb4ef82ed2eb6944db1c55",
+      "sku": "PROD122",
+      "name": "BRAWNY (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb4f832ed2eb6944db1c78",
+      "sku": "PROD123",
+      "name": "TIK OFF (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb50262ed2eb6944db1c9b",
+      "sku": "PROD124",
+      "name": "GASTROID (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb50ae2ed2eb6944db1cbe",
+      "sku": "PROD125",
+      "name": "FURRR (Phytonutrient Supplement)"
+    },
+    {
+      "id": "69fb513d2ed2eb6944db1ce1",
+      "sku": "PROD126",
+      "name": "WIGGLES (Phytonutrient Supplement)"
+    }
+  ]
+}

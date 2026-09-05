@@ -1,0 +1,46 @@
+# VCS
+.git
+
+# Node
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime/logs
+logs
+*.log
+
+# Tests and coverage
+coverage
+
+# IDE/editor
+.vscode
+.idea
+*.swp
+
+# Local env
+.env
+.env.*
+
+# Build artifacts
+build
+out
+dist
+
+# Data directories (mounted as volumes at runtime)
+data
+backups
+uploads
+
+# Misc large files
+*.csv
+*.csv.gz
+*.gz
+*.zip
+*.tar
+*.tgz
+
+# OS files
+.DS_Store
+Thumbs.db

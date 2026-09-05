@@ -1,0 +1,41 @@
+{
+  "route": "POST /:petId/devices",
+  "method": "POST",
+  "path": "/:petId/devices",
+  "pathParams": {
+    "petId": {
+      "type": "string",
+      "required": true,
+      "description": "MongoDB ObjectId of the pet"
+    }
+  },
+  "requestBody": {
+    "deviceId": {
+      "type": "string",
+      "required": true,
+      "description": "BLE/MAC address in format XX:XX:XX:XX:XX:XX",
+      "example": "AA:BB:CC:DD:EE:FF"
+    },
+    "petId": {
+      "type": "string",
+      "required": true,
+      "description": "MongoDB ObjectId of the pet (should match path param)"
+    },
+    "additionalFields": {
+      "type": "object",
+      "required": false,
+      "description": "Any additional device data fields"
+    }
+  },
+  "headers": {
+    "Authorization": {
+      "type": "string",
+      "required": true,
+      "description": "Bearer token for authentication"
+    }
+  }
+}
+
+
+
+

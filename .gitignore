@@ -1,0 +1,13 @@
+﻿node_modules/
+**/node_modules/
+data/
+**/data/
+.env
+**/.env
+**/.env.*
+*.log
+dist/
+**/dist/
+
+community-marshee/config/serviceAccountKey.json
+marshee-marketplace-backend-v2/config/gcs-storage-access.json

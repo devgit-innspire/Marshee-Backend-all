@@ -1,0 +1,65 @@
+{
+  "route": "POST /pet-fitness-sessions",
+  "method": "POST",
+  "path": "/pet-fitness-sessions",
+  "requestBody": {
+    "petId": {
+      "type": "string",
+      "required": true,
+      "description": "MongoDB ObjectId of the pet",
+      "validation": "Must be a valid MongoDB ObjectId"
+    },
+    "activityCsv": {
+      "type": "string",
+      "required": true,
+      "description": "Activity data in CSV format"
+    },
+    "deviceId": {
+      "type": "string",
+      "required": true,
+      "description": "BLE/MAC address in format XX:XX:XX:XX:XX:XX",
+      "example": "AA:BB:CC:DD:EE:FF",
+      "validation": "Must be a valid BLE/MAC address"
+    },
+    "sampleRateHz": {
+      "type": "integer",
+      "required": false,
+      "description": "Sample rate in Hz",
+      "default": 50,
+      "validation": "Must be between 1 and 1000"
+    },
+    "startTsMs": {
+      "type": "number",
+      "required": false,
+      "description": "Start timestamp in milliseconds"
+    },
+    "endTsMs": {
+      "type": "number",
+      "required": false,
+      "description": "End timestamp in milliseconds"
+    },
+    "firmwareVersion": {
+      "type": "string",
+      "required": false,
+      "description": "Firmware version",
+      "default": "1.0.0"
+    },
+    "receivedAt": {
+      "type": "string",
+      "required": false,
+      "description": "ISO 8601 date string for when the data was received",
+      "validation": "Must be a valid ISO 8601 date"
+    }
+  },
+  "headers": {
+    "Authorization": {
+      "type": "string",
+      "required": true,
+      "description": "Bearer token for authentication"
+    }
+  }
+}
+
+
+
+

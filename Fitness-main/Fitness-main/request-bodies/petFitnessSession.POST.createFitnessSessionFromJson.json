@@ -1,0 +1,63 @@
+{
+  "route": "POST /pet-fitness-sessions/json",
+  "method": "POST",
+  "path": "/pet-fitness-sessions/json",
+  "description": "Create fitness session from JSON activity data (for mobile app)",
+  "requestBody": {
+    "petId": {
+      "type": "string",
+      "required": true,
+      "description": "MongoDB ObjectId of the pet",
+      "validation": "Must be a valid MongoDB ObjectId"
+    },
+    "deviceId": {
+      "type": "string",
+      "required": true,
+      "description": "BLE/MAC address in format XX:XX:XX:XX:XX:XX",
+      "example": "AA:BB:CC:DD:EE:FF",
+      "validation": "Must be a valid BLE/MAC address"
+    },
+    "activityData": {
+      "type": "array",
+      "required": true,
+      "description": "Array of activity data rows, each row is a string",
+      "items": {
+        "type": "string"
+      },
+      "example": ["row1,row2,row3", "row4,row5,row6"]
+    },
+    "sampleRateHz": {
+      "type": "integer",
+      "required": false,
+      "description": "Sample rate in Hz",
+      "validation": "Must be between 1 and 1000"
+    },
+    "timestamp": {
+      "type": "string",
+      "required": false,
+      "description": "ISO 8601 date string",
+      "validation": "Must be a valid ISO 8601 date"
+    },
+    "windowStart": {
+      "type": "number",
+      "required": false,
+      "description": "Window start time"
+    },
+    "windowEnd": {
+      "type": "number",
+      "required": false,
+      "description": "Window end time"
+    }
+  },
+  "headers": {
+    "Authorization": {
+      "type": "string",
+      "required": true,
+      "description": "Bearer token for authentication"
+    }
+  }
+}
+
+
+
+

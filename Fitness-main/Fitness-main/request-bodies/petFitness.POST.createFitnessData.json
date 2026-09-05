@@ -1,0 +1,152 @@
+{
+  "route": "POST /pet-fitness",
+  "method": "POST",
+  "path": "/pet-fitness",
+  "requestBody": {
+    "petId": {
+      "type": "string",
+      "required": true,
+      "description": "MongoDB ObjectId of the pet",
+      "validation": "Must be a valid MongoDB ObjectId"
+    },
+    "deviceId": {
+      "type": "string",
+      "required": true,
+      "description": "BLE/MAC address in format XX:XX:XX:XX:XX:XX",
+      "example": "AA:BB:CC:DD:EE:FF",
+      "validation": "Must be a valid BLE/MAC address"
+    },
+    "roll": {
+      "type": "number",
+      "required": true,
+      "description": "Roll value"
+    },
+    "pitch": {
+      "type": "number",
+      "required": true,
+      "description": "Pitch value"
+    },
+    "temp": {
+      "type": "number",
+      "required": true,
+      "description": "Temperature value"
+    },
+    "eefalls": {
+      "type": "integer",
+      "required": false,
+      "description": "Eefalls count",
+      "validation": "Must be >= 0"
+    },
+    "rest": {
+      "type": "integer",
+      "required": false,
+      "description": "Rest count",
+      "validation": "Must be >= 0"
+    },
+    "walk": {
+      "type": "integer",
+      "required": false,
+      "description": "Walk count",
+      "validation": "Must be >= 0"
+    },
+    "trot": {
+      "type": "integer",
+      "required": false,
+      "description": "Trot count",
+      "validation": "Must be >= 0"
+    },
+    "run": {
+      "type": "integer",
+      "required": false,
+      "description": "Run count",
+      "validation": "Must be >= 0"
+    },
+    "sprint": {
+      "type": "integer",
+      "required": false,
+      "description": "Sprint count",
+      "validation": "Must be >= 0"
+    },
+    "rollplay": {
+      "type": "integer",
+      "required": false,
+      "description": "Rollplay count",
+      "validation": "Must be >= 0"
+    },
+    "dig": {
+      "type": "integer",
+      "required": false,
+      "description": "Dig count",
+      "validation": "Must be >= 0"
+    },
+    "limp": {
+      "type": "integer",
+      "required": false,
+      "description": "Limp count",
+      "validation": "Must be >= 0"
+    },
+    "tailwags": {
+      "type": "integer",
+      "required": false,
+      "description": "Tailwags count",
+      "validation": "Must be >= 0"
+    },
+    "stairs_up": {
+      "type": "integer",
+      "required": false,
+      "description": "Stairs up count",
+      "validation": "Must be >= 0"
+    },
+    "stairs_down": {
+      "type": "integer",
+      "required": false,
+      "description": "Stairs down count",
+      "validation": "Must be >= 0"
+    },
+    "sniff": {
+      "type": "integer",
+      "required": false,
+      "description": "Sniff count",
+      "validation": "Must be >= 0"
+    },
+    "heartRate": {
+      "type": "integer",
+      "required": false,
+      "description": "Heart rate",
+      "validation": "Must be >= 0"
+    },
+    "steps": {
+      "type": "integer",
+      "required": false,
+      "description": "Steps count",
+      "validation": "Must be >= 0"
+    },
+    "calories": {
+      "type": "number",
+      "required": false,
+      "description": "Calories burned"
+    },
+    "distance": {
+      "type": "number",
+      "required": false,
+      "description": "Distance traveled"
+    },
+    "batteryLevel": {
+      "type": "integer",
+      "required": false,
+      "description": "Battery level percentage",
+      "validation": "Must be between 0 and 100"
+    }
+  },
+  "headers": {
+    "Authorization": {
+      "type": "string",
+      "required": true,
+      "description": "Bearer token for authentication"
+    }
+  }
+}
+
+
+
+

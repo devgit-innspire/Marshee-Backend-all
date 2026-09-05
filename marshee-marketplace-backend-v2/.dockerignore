@@ -1,0 +1,36 @@
+# Node artifacts
+node_modules
+npm-debug.log
+yarn.lock
+.pnpm-store
+
+# VCS
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Logs / temp
+logs
+*.log
+tmp
+.cache
+
+# Local/dev only
+.env
+.env.*
+*.local
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Tests and scripts not needed in runtime image
+scripts
+*.test.js
+test-*.js
+*.md

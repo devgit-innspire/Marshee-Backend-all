@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { auth } from "../middlewares/auth";
+import { requireAdmin } from "../middlewares/requireAdmin";
 import {
   getNotifications,
   markNotificationAsRead,
@@ -69,7 +70,7 @@ router.patch("/read-all", auth, markAllNotificationsAsRead);
  *       200:
  *         description: Broadcast sent
  */
-router.post("/broadcast", auth, broadcastToAll);
+router.post("/broadcast", auth, requireAdmin, broadcastToAll);
 
 /**
  * @openapi

@@ -17,8 +17,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
-// Connect to existing database
-connectToExistingDB();
+// DB connection + server startup is wired at the bottom of this file
 
 // Security middleware - configure helmet for API
 app.use(helmet({
@@ -149,38 +148,49 @@ app.use('*', (req, res) => {
     });
 });
 
-// Start server
-const server = app.listen(PORT, () => {
-    console.log(`🚀 Pet Fitness Backend running on port ${PORT}`);
-    console.log(`🌍 Environment: ${NODE_ENV}`);
-    console.log(`📊 Health check: http://localhost:${PORT}/health`);
-    console.log(`📚 API info: http://localhost:${PORT}/api`);
-    console.log(`🏃‍♂️ Fitness tracking: http://localhost:${PORT}/api/v1/pet-fitness`);
-    console.log(`📊 Session tracking: http://localhost:${PORT}/api/v1/pet-fitness-sessions`);
-    console.log(`🔧 Device management: http://localhost:${PORT}/api/v1/pets`);
-    console.log(`🔗 Connected to existing pets_ecommerce database`);
-});
-
-// Set server timeout (30 seconds)
-server.timeout = 30000;
-
-// Graceful shutdown
-const gracefulShutdown = (signal) => {
-    console.log(`\n${signal} received. Starting graceful shutdown...`);
-    server.close(() => {
-        console.log('HTTP server closed.');
-        process.exit(0);
+// Start the HTTP server — only called once the initial DB connection succeeds
+const startServer = () => {
+    const server = app.listen(PORT, () => {
+        console.log(`🚀 Pet Fitness Backend running on port ${PORT}`);
+        console.log(`🌍 Environment: ${NODE_ENV}`);
+        console.log(`📊 Health check: http://localhost:${PORT}/health`);
+        console.log(`📚 API info: http://localhost:${PORT}/api`);
+        console.log(`🏃‍♂️ Fitness tracking: http://localhost:${PORT}/api/v1/pet-fitness`);
+        console.log(`📊 Session tracking: http://localhost:${PORT}/api/v1/pet-fitness-sessions`);
+        console.log(`🔧 Device management: http://localhost:${PORT}/api/v1/pets`);
+        console.log(`🔗 Connected to existing pets_ecommerce database`);
     });
 
-    // Force close after 10 seconds
-    setTimeout(() => {
-        console.error('Forced shutdown after timeout');
-        process.exit(1);
-    }, 10000);
+    // Set server timeout (30 seconds)
+    server.timeout = 30000;
+
+    // Graceful shutdown
+    const gracefulShutdown = (signal) => {
+        console.log(`\n${signal} received. Starting graceful shutdown...`);
+        server.close(() => {
+            console.log('HTTP server closed.');
+            process.exit(0);
+        });
+
+        // Force close after 10 seconds
+        setTimeout(() => {
+            console.error('Forced shutdown after timeout');
+            process.exit(1);
+        }, 10000);
+    };
+
+    process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
+    process.on('SIGINT', () => gracefulShutdown('SIGINT'));
 };
 
-process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
-process.on('SIGINT', () => gracefulShutdown('SIGINT'));
+// Connect to the existing database first; only start accepting HTTP traffic
+// once that succeeds. If it fails, log clearly and exit instead of degrading silently.
+connectToExistingDB()
+    .then(startServer)
+    .catch((error) => {
+        console.error(`[${new Date().toISOString()}] FATAL: Initial database connection failed. Server will not start.`, error);
+        process.exit(1);
+    });
 
 // Handle unhandled promise rejections
 process.on('unhandledRejection', (err) => {

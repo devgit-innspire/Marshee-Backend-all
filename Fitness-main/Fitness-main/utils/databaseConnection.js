@@ -1,6 +1,16 @@
 const mongoose = require('mongoose');
 const path = require('path');
 
+// Log connection loss that happens after a successful startup connect.
+// Mongoose's driver already retries internally — this only makes the event visible.
+mongoose.connection.on('error', (err) => {
+    console.error(`[${new Date().toISOString()}] MongoDB connection error:`, err);
+});
+
+mongoose.connection.on('disconnected', () => {
+    console.error(`[${new Date().toISOString()}] MongoDB connection lost (disconnected).`);
+});
+
 // Connect to the same MongoDB database as your main backend
 const connectToExistingDB = async () => {
     try {

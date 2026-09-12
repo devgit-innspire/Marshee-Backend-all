@@ -70,12 +70,6 @@ const validateJsonActivityData = [
     validate
 ];
 
-// GET /api/v1/pet-fitness-sessions/export/csv - Get all fitness sessions data in CSV format (PUBLIC - for ML training)
-router.get('/export/csv', getAllFitnessSessionsCSV);
-
-// GET /api/v1/pet-fitness-sessions/filter/pet - Get fitness sessions filtered by pet attributes (PUBLIC - for ML training)
-router.get('/filter/pet', getFitnessSessionsByPetFilters);
-
 // Calorie burn validation rules
 const validateWeightQuery = [
     query('weightKg').isFloat({ min: 0.1, max: 200 }).withMessage('weightKg must be a positive number between 0.1 and 200 kg'),
@@ -94,6 +88,12 @@ const validateCalculateCalorieBurn = [
 
 // All routes require authentication
 router.use(auth);
+
+// GET /api/v1/pet-fitness-sessions/export/csv - Get all fitness sessions data in CSV format (own sessions only; admins can opt into all via includeAllUsers=true)
+router.get('/export/csv', getAllFitnessSessionsCSV);
+
+// GET /api/v1/pet-fitness-sessions/filter/pet - Get fitness sessions filtered by pet attributes (own sessions only; admins can opt into all via includeAllUsers=true)
+router.get('/filter/pet', getFitnessSessionsByPetFilters);
 
 // POST /api/v1/pet-fitness-sessions - Create new fitness session with CSV data
 router.post('/', validateFitnessSession, createFitnessSession);

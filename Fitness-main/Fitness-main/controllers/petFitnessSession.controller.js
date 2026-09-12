@@ -1293,17 +1293,18 @@ const createFitnessSessionFromJson = async (req, res) => {
     }
 };
 
-// Get all fitness sessions data in CSV format (PUBLIC - for ML training)
+// Get all fitness sessions data in CSV format (requires authentication; scoped to the caller's own sessions unless they are an admin)
 const getAllFitnessSessionsCSV = async (req, res) => {
     try {
-        const ownerId = req.user?.id; // Optional - may not exist for public access
-        const { 
-            includeAllUsers = 'true', // Default to true for public ML training access
+        const ownerId = req.user.id;
+        const isAdmin = req.user.role === 'admin';
+        const {
+            includeAllUsers = 'false', // Regular users are always scoped to their own sessions; only admins can request all users' data
             status,
             startDate,
             endDate,
             deviceId: deviceIdQuery,
-            ownerId: ownerIdFilter // Allow filtering by specific ownerId via query param
+            ownerId: ownerIdFilter // Admin-only: filter by a specific ownerId via query param
         } = req.query;
 
         // Check if PetFitnessSession model is available
@@ -1319,11 +1320,18 @@ const getAllFitnessSessionsCSV = async (req, res) => {
 
         // Build query
         const query = {};
-        
-        // Filter by ownerId if provided via query param or from authenticated user
-        // For ML training, default to showing all data unless specifically filtered
-        const targetOwnerId = ownerIdFilter || (includeAllUsers !== 'true' ? ownerId : null);
-        
+
+        // Non-admins are always scoped to their own sessions, regardless of query params.
+        // Admins can request all users' data (includeAllUsers=true) or a specific owner (ownerId=...).
+        let targetOwnerId = ownerId;
+        if (isAdmin) {
+            if (includeAllUsers === 'true') {
+                targetOwnerId = null;
+            } else if (ownerIdFilter) {
+                targetOwnerId = ownerIdFilter;
+            }
+        }
+
         if (targetOwnerId) {
             const mongoose = require('mongoose');
             try {
@@ -1333,7 +1341,7 @@ const getAllFitnessSessionsCSV = async (req, res) => {
                 query.ownerId = targetOwnerId;
             }
         }
-        // If no ownerId filter, query will return all sessions (for ML training)
+        // targetOwnerId is only null when an admin explicitly requested all users' data
 
         // Import Pet model for enrichment
         const { Pet } = importExistingModels();
@@ -1896,9 +1904,11 @@ const getCalorieBurnFromSession = async (req, res) => {
     }
 };
 
-// Get fitness sessions filtered by pet attributes (breed, gender, health conditions, age)
+// Get fitness sessions filtered by pet attributes (breed, gender, health conditions, age); scoped to the caller's own sessions unless they are an admin
 const getFitnessSessionsByPetFilters = async (req, res) => {
     try {
+        const ownerId = req.user.id;
+        const isAdmin = req.user.role === 'admin';
         const {
             breed,
             gender,
@@ -1909,7 +1919,9 @@ const getFitnessSessionsByPetFilters = async (req, res) => {
             startDate,
             endDate,
             deviceId: deviceIdQuery,
-            includePetInfo = 'true'
+            includePetInfo = 'true',
+            includeAllUsers = 'false', // Regular users are always scoped to their own sessions; only admins can request all users' data
+            ownerId: ownerIdFilter // Admin-only: filter by a specific ownerId via query param
         } = req.query;
 
         // Check if PetFitnessSession model is available
@@ -1934,7 +1946,27 @@ const getFitnessSessionsByPetFilters = async (req, res) => {
 
         // Build base match for PetFitnessSession
         const sessionMatch = {};
-        
+
+        // Non-admins are always scoped to their own sessions, regardless of query params.
+        // Admins can request all users' data (includeAllUsers=true) or a specific owner (ownerId=...).
+        let targetOwnerId = ownerId;
+        if (isAdmin) {
+            if (includeAllUsers === 'true') {
+                targetOwnerId = null;
+            } else if (ownerIdFilter) {
+                targetOwnerId = ownerIdFilter;
+            }
+        }
+
+        if (targetOwnerId) {
+            const mongoose = require('mongoose');
+            try {
+                sessionMatch.ownerId = new mongoose.Types.ObjectId(targetOwnerId);
+            } catch (e) {
+                sessionMatch.ownerId = targetOwnerId;
+            }
+        }
+
         // Status filter
         if (status && status !== 'all') {
             sessionMatch.status = status;

@@ -564,13 +564,13 @@ const getPetFitnessSessionStats = async (req, res) => {
                 const petById = await Pet.findById(petObjectId);
                 if (!petById) {
                     // Pet not found in Pet model, but continue anyway
-                    // The PetFitnessSession query will filter by petId and ownership
-                    // If pet doesn't exist or user doesn't own it, they'll get empty results
+                    // The PetFitnessSession query now enforces ownership below, so this is safe:
+                    // if the pet doesn't exist or user doesn't own it, they'll get empty results
                     console.warn(`Pet not found in Pet model for ID: ${trimmedPetId}. Continuing with PetFitnessSession query.`);
                 } else {
                     // Pet found - verify ownership - check multiple possible field names
                     let ownershipVerified = false;
-                    
+
                     // Check if ownerId matches (try multiple field name variations)
                     if (ownerId) {
                         if (petById.ownerId && String(petById.ownerId) === String(ownerId)) {
@@ -581,18 +581,25 @@ const getPetFitnessSessionStats = async (req, res) => {
                             ownershipVerified = true;
                         }
                     }
-                    
-                    // If ownership not verified, log warning but continue
-                    // The PetFitnessSession query will filter by ownership anyway, providing security
+
+                    // Ownership must be verified - deny access otherwise
                     if (!ownershipVerified) {
                         console.warn(`Pet ownership verification failed. Pet ID: ${trimmedPetId}, User ID: ${ownerId}`);
                         console.warn('Pet document fields:', Object.keys(petById.toObject ? petById.toObject() : petById));
-                        // Continue - let the PetFitnessSession query handle ownership filtering
+                        return res.status(403).json({
+                            success: false,
+                            message: 'Access denied. This pet does not belong to you.'
+                        });
                     }
                 }
             } catch (petError) {
-                // If Pet model query fails, log but continue (graceful degradation)
-                console.warn('Pet model query failed, continuing without verification:', petError.message);
+                // Ownership could not be determined due to a DB error - fail closed, not open
+                console.error('Pet model query failed while verifying ownership:', petError);
+                return res.status(500).json({
+                    success: false,
+                    message: 'Failed to verify pet ownership',
+                    error: petError.message
+                });
             }
         }
 
@@ -649,8 +656,7 @@ const getPetFitnessSessionStats = async (req, res) => {
         }
 
         // Add ownership filters - try both ObjectId and string for ownerId
-        // Note: We're being lenient here - if user can query the pet, they can see its sessions
-        // This handles cases where sessions might have been created with different ownerId
+        // This handles cases where sessions might have been created with different ownerId types
         const ownershipConditions = [];
         if (ownerId) {
             try {
@@ -665,18 +671,9 @@ const getPetFitnessSessionStats = async (req, res) => {
             }
         }
 
-        // Only add ownership filter if we have conditions AND we want strict ownership
-        // For now, we'll be lenient - if user can access the pet, they can see sessions
-        // Uncomment the next block if you want strict ownership checking:
-        /*
+        // Enforce ownership: only return sessions belonging to the requesting user
         if (ownershipConditions.length > 0) {
             query.$and.push({ $or: ownershipConditions });
-        }
-        */
-        
-        // Log that we're skipping strict ownership check
-        if (ownershipConditions.length > 0) {
-            console.log('Note: Skipping strict ownership filter. User can access pet, allowing all sessions for this pet.');
         }
         
         if (deviceIdQuery) {

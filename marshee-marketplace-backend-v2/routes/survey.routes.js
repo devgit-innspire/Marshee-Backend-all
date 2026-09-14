@@ -58,7 +58,7 @@ router.post('/', surveyController.submitSurvey);
  *     responses:
  *       200: { description: List of surveys }
  */
-router.get('/', protect, authorize('admin'), surveyController.getAllSurveys);
+router.get('/', protect, authorize('admin', 'subadmin'), surveyController.getAllSurveys);
 
 /**
  * @swagger
@@ -69,7 +69,7 @@ router.get('/', protect, authorize('admin'), surveyController.getAllSurveys);
  *     responses:
  *       200: { description: Survey analytics }
  */
-router.get('/analytics', protect, authorize('admin'), surveyController.getSurveyAnalytics);
+router.get('/analytics', protect, authorize('admin', 'subadmin'), surveyController.getSurveyAnalytics);
 
 /**
  * @swagger
@@ -92,7 +92,7 @@ router.get('/analytics', protect, authorize('admin'), surveyController.getSurvey
  *       200: { description: Surveys for email }
  *       404: { description: Not found }
  */
-router.get('/email/:email', protect, authorize('admin'), surveyController.getSurveysByEmail);
+router.get('/email/:email', protect, authorize('admin', 'subadmin'), surveyController.getSurveysByEmail);
 
 /**
  * @swagger
@@ -109,7 +109,7 @@ router.get('/email/:email', protect, authorize('admin'), surveyController.getSur
  *       200: { description: Survey details }
  *       404: { description: Survey not found }
  */
-router.get('/:id', protect, authorize('admin'), surveyController.getSurveyById);
+router.get('/:id', protect, authorize('admin', 'subadmin'), surveyController.getSurveyById);
 
 /**
  * @swagger
@@ -126,6 +126,6 @@ router.get('/:id', protect, authorize('admin'), surveyController.getSurveyById);
  *       200: { description: Survey deleted }
  *       404: { description: Survey not found }
  */
-router.delete('/:id', protect, authorize('admin'), surveyController.deleteSurvey);
+router.delete('/:id', protect, authorize('admin', 'subadmin'), surveyController.deleteSurvey);
 
 module.exports = router;

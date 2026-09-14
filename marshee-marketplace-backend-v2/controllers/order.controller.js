@@ -11,6 +11,7 @@ const { StatusCodes } = require('http-status-codes');
 const ErrorResponse = require('../utils/errorResponse');
 const mongoose = require('mongoose');
 const { createSubscriptionForServiceOrderItem } = require('./helpers/serviceSubscription.helper');
+const { isStaff } = require('../utils/roles');
 
 /** Resolve partner IDs for a partner user (for filtering orders by items.partner). */
 async function getPartnerIdsForUser(user) {
@@ -465,7 +466,7 @@ const orderItems = await Promise.all(cart.items.map(async (item) => {
     async getOrders(req, res, next) {
         try {
             const userId = req.user.id;
-            const isAdmin = req.user.role === 'admin';
+            const isAdmin = isStaff(req.user);
             const isPartner = req.user.role === 'partner';
             const { 
                 page = 1, 
@@ -582,7 +583,7 @@ const orderItems = await Promise.all(cart.items.map(async (item) => {
     async getOrderById(req, res, next) {
         try {
             const userId = req.user.id;
-            const isAdmin = req.user.role === 'admin';
+            const isAdmin = isStaff(req.user);
             const isPartner = req.user.role === 'partner';
             const { id } = req.params;
 
@@ -637,7 +638,7 @@ const orderItems = await Promise.all(cart.items.map(async (item) => {
     async getOrderTracking(req, res, next) {
         try {
             const userId = req.user.id;
-            const isAdmin = req.user.role === 'admin';
+            const isAdmin = isStaff(req.user);
             const isPartner = req.user.role === 'partner';
             const { id } = req.params;
             const live = req.query.live === 'true' || req.query.live === '1';

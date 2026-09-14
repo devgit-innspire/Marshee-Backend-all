@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const analyticsController = require('../controllers/analytics.controller');
-const { protect, authorize } = require('../middleware/auth');
+const { protect, authorize, requirePermission } = require('../middleware/auth');
 
 /**
  * @swagger
@@ -28,7 +28,7 @@ const { protect, authorize } = require('../middleware/auth');
  *       200:
  *         description: Complete dashboard analytics
  */
-router.get('/dashboard', protect, authorize('partner', 'admin'), analyticsController.getDashboardAnalytics);
+router.get('/dashboard', protect, requirePermission('analytics.view', { allowPartner: true }), analyticsController.getDashboardAnalytics);
 
 /**
  * @swagger
@@ -42,7 +42,7 @@ router.get('/dashboard', protect, authorize('partner', 'admin'), analyticsContro
  *       200:
  *         description: Product analytics
  */
-router.get('/products', protect, authorize('partner', 'admin'), analyticsController.getProductAnalytics);
+router.get('/products', protect, requirePermission('analytics.view', { allowPartner: true }), analyticsController.getProductAnalytics);
 
 /**
  * @swagger
@@ -56,7 +56,7 @@ router.get('/products', protect, authorize('partner', 'admin'), analyticsControl
  *       200:
  *         description: Order analytics
  */
-router.get('/orders', protect, authorize('partner', 'admin'), analyticsController.getOrderAnalytics);
+router.get('/orders', protect, requirePermission('analytics.view', { allowPartner: true }), analyticsController.getOrderAnalytics);
 
 /**
  * @swagger
@@ -70,7 +70,7 @@ router.get('/orders', protect, authorize('partner', 'admin'), analyticsControlle
  *       200:
  *         description: Sales analytics
  */
-router.get('/sales', protect, authorize('partner', 'admin'), analyticsController.getSalesAnalytics);
+router.get('/sales', protect, requirePermission('analytics.view', { allowPartner: true }), analyticsController.getSalesAnalytics);
 
 /**
  * @swagger
@@ -84,7 +84,7 @@ router.get('/sales', protect, authorize('partner', 'admin'), analyticsController
  *       200:
  *         description: Category analytics
  */
-router.get('/categories', protect, authorize('admin'), analyticsController.getCategoryAnalytics);
+router.get('/categories', protect, requirePermission('analytics.view'), analyticsController.getCategoryAnalytics);
 
 /**
  * @swagger
@@ -98,6 +98,6 @@ router.get('/categories', protect, authorize('admin'), analyticsController.getCa
  *       200:
  *         description: Partner sales analytics
  */
-router.get('/partners', protect, authorize('admin'), analyticsController.getPartnerAnalytics);
+router.get('/partners', protect, requirePermission('analytics.view'), analyticsController.getPartnerAnalytics);
 
 module.exports = router;

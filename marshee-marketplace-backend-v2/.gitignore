@@ -39,4 +39,10 @@ public/uploads/
 
 # Misc
 .DS_Store
-Thumbs.dbconfig/gcs-storage-access.json
+Thumbs.db
+
+# Service account keys — never commit these
+config/gcs-storage-access.json
+config/*-key.json
+*-service-account.json
+

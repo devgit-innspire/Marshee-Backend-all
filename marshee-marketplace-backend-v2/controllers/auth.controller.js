@@ -1,4 +1,5 @@
 const ErrorResponse = require('../utils/errorResponse');
+const { ALL_PERMISSIONS } = require('../config/permissions');
 const asyncHandler = require('../middleware/async');
 const User = require('../models/user.model');
 const Pet = require('../models/pet.model');
@@ -253,6 +254,11 @@ exports.login = asyncHandler(async (req, res, next) => {
     return next(new ErrorResponse('Invalid credentials', 401));
   }
 
+  // Deactivated staff accounts cannot sign in
+  if (user.isActive === false) {
+    return next(new ErrorResponse('This account has been deactivated. Please contact an administrator.', 403));
+  }
+
   sendTokenResponse(user, 200, res);
 });
 
@@ -263,13 +269,21 @@ exports.login = asyncHandler(async (req, res, next) => {
 exports.getMe = asyncHandler(async (req, res, next) => {
   const user = await User.findById(req.user.id);
 
+  // `effectivePermissions` spells out what this account can actually do, so the
+  // console does not have to re-implement the "admins hold everything" rule and
+  // risk showing a sub-admin buttons that will 403.
+  const effectivePermissions =
+    user && user.role === 'admin'
+      ? ALL_PERMISSIONS
+      : (user && Array.isArray(user.permissions) ? user.permissions : []);
+
   res.status(200).json({
     success: true,
-    data: user
+    data: user ? { ...user.toObject(), effectivePermissions } : user
   });
 });
 
-// @desc    Set up password for partner (using JWT token from email)
+// @desc    Set up password for partner or sub-admin (using JWT token from email)
 // @route   POST /api/v1/auth/setup-password | POST /api/v1/auth/partner/setup-password
 // @access  Public
 // @body    { token: string, password: string }
@@ -294,9 +308,10 @@ exports.setupPartnerPassword = asyncHandler(async (req, res, next) => {
       return next(new ErrorResponse('Invalid token purpose', 400));
     }
 
-    // Validate role
-    if (decoded.role !== 'partner') {
-      return next(new ErrorResponse('This token is only for partner accounts', 403));
+    // Validate role — the same flow serves partners and sub-admins
+    const SETUP_ROLES = ['partner', 'subadmin'];
+    if (!SETUP_ROLES.includes(decoded.role)) {
+      return next(new ErrorResponse('This token is not valid for password setup', 403));
     }
 
     // Find user
@@ -315,9 +330,9 @@ exports.setupPartnerPassword = asyncHandler(async (req, res, next) => {
       return next(new ErrorResponse('Password has already been set for this account', 400));
     }
 
-    // Verify user is a partner
-    if (user.role !== 'partner') {
-      return next(new ErrorResponse('This setup link is only for partner accounts', 403));
+    // The account's current role must match the role the token was issued for
+    if (user.role !== decoded.role) {
+      return next(new ErrorResponse('This setup link is not valid for this account', 403));
     }
 
     // Set password (will be hashed by User model pre-save hook)

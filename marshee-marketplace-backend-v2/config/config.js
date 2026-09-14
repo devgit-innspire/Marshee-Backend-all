@@ -20,6 +20,10 @@ module.exports = {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS
   },
+  // Base URL the device QR labels point at. A scan from a generic phone camera
+  // lands here; the Marshee app reads the query string instead.
+  deviceActivationBaseUrl:
+    process.env.DEVICE_ACTIVATION_BASE_URL || 'https://marshee.com/activate',
   cloudinary: {
     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
     apiKey: process.env.CLOUDINARY_API_KEY,

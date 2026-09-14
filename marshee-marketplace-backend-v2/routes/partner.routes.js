@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const partnerController = require('../controllers/partner.controller');
-const { protect, authorize } = require('../middleware/auth');
+const { protect, authorize, requirePermission } = require('../middleware/auth');
 
 /**
  * @swagger
@@ -83,7 +83,7 @@ router.post('/apply', partnerController.submitApplication);
  *       200:
  *         description: List of pending partners
  */
-router.get('/pending', protect, authorize('admin'), partnerController.getPendingPartners);
+router.get('/pending', protect, requirePermission('partners.view', 'partners.manage'), partnerController.getPendingPartners);
 
 /**
  * @swagger
@@ -97,7 +97,7 @@ router.get('/pending', protect, authorize('admin'), partnerController.getPending
  *       200:
  *         description: List of partners by status
  */
-router.get('/status/:status', protect, authorize('admin'), partnerController.getPartnersByStatus);
+router.get('/status/:status', protect, requirePermission('partners.view', 'partners.manage'), partnerController.getPartnersByStatus);
 
 /**
  * @swagger
@@ -111,7 +111,7 @@ router.get('/status/:status', protect, authorize('admin'), partnerController.get
  *       200:
  *         description: Partner statistics
  */
-router.get('/stats', protect, authorize('admin'), partnerController.getPartnerStats);
+router.get('/stats', protect, requirePermission('partners.view', 'partners.manage'), partnerController.getPartnerStats);
 
 // ========== PARTNER SELF-SERVICE ROUTES ==========
 // Must be before /:id
@@ -160,7 +160,7 @@ router.get('/:id', partnerController.getPartner);
  *       200:
  *         description: Partner approved, user created, email sent
  */
-router.patch('/:id/approve', protect, authorize('admin'), partnerController.approvePartner);
+router.patch('/:id/approve', protect, requirePermission('partners.manage'), partnerController.approvePartner);
 
 /**
  * @swagger
@@ -174,6 +174,6 @@ router.patch('/:id/approve', protect, authorize('admin'), partnerController.appr
  *       200:
  *         description: Partner rejected
  */
-router.patch('/:id/reject', protect, authorize('admin'), partnerController.rejectPartner);
+router.patch('/:id/reject', protect, requirePermission('partners.manage'), partnerController.rejectPartner);
 
 module.exports = router;

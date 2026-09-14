@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const categoryController = require('../controllers/category.controller');
-const { protect, authorize } = require('../middleware/auth');
+const { protect, authorize, requirePermission } = require('../middleware/auth');
 
 /**
  * @swagger
@@ -36,7 +36,7 @@ const { protect, authorize } = require('../middleware/auth');
  *       201:
  *         description: Super category created successfully
  */
-router.post('/super', protect, authorize('admin'), categoryController.createSuperCategory);
+router.post('/super', protect, requirePermission('categories.manage'), categoryController.createSuperCategory);
 
 /**
  * @swagger
@@ -78,7 +78,7 @@ router.post('/super', protect, authorize('admin'), categoryController.createSupe
  *       201:
  *         description: Service category created successfully
  */
-router.post('/service', protect, authorize('admin'), categoryController.createServiceCategory);
+router.post('/service', protect, requirePermission('categories.manage'), categoryController.createServiceCategory);
 
 /**
  * @swagger
@@ -116,7 +116,7 @@ router.post('/service', protect, authorize('admin'), categoryController.createSe
  *       201:
  *         description: Sub category created successfully
  */
-router.post('/sub', protect, authorize('admin'), categoryController.createSubCategory);
+router.post('/sub', protect, requirePermission('categories.manage'), categoryController.createSubCategory);
 
 /**
  * @swagger
@@ -157,13 +157,13 @@ router.get('/sub', categoryController.getSubCategories);
 router.get('/getHierarchy', categoryController.getCategoryHierarchy);
 
 // Admin-only: update/delete categories (dashboard/admin panel)
-router.put('/super-category/:id', protect, authorize('admin'), categoryController.updateSuperCategory);
-router.delete('/super-category/:id', protect, authorize('admin'), categoryController.deleteSuperCategory);
+router.put('/super-category/:id', protect, requirePermission('categories.manage'), categoryController.updateSuperCategory);
+router.delete('/super-category/:id', protect, requirePermission('categories.manage'), categoryController.deleteSuperCategory);
 
-router.put('/service-category/:id', protect, authorize('admin'), categoryController.updateServiceCategory);
-router.delete('/service-category/:id', protect, authorize('admin'), categoryController.deleteServiceCategory);
+router.put('/service-category/:id', protect, requirePermission('categories.manage'), categoryController.updateServiceCategory);
+router.delete('/service-category/:id', protect, requirePermission('categories.manage'), categoryController.deleteServiceCategory);
 
-router.put('/sub-category/:id', protect, authorize('admin'), categoryController.updateSubCategory);
-router.delete('/sub-category/:id', protect, authorize('admin'), categoryController.deleteSubCategory);
+router.put('/sub-category/:id', protect, requirePermission('categories.manage'), categoryController.updateSubCategory);
+router.delete('/sub-category/:id', protect, requirePermission('categories.manage'), categoryController.deleteSubCategory);
 
 module.exports = router;

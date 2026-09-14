@@ -8,8 +8,8 @@ const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: function () {
-      // Name is only required for admin and partner roles
-      return this.role === "admin" || this.role === "partner";
+      // Name is only required for staff roles (admin, sub-admin) and partners
+      return this.role === "admin" || this.role === "subadmin" || this.role === "partner";
     },
     trim: true,
     maxlength: [50, "Name cannot be more than 50 characters"],
@@ -40,14 +40,15 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ["user", "partner", "admin"],
+    enum: ["user", "partner", "admin", "subadmin"],
     default: "user",
   },
   password: {
     type: String,
     required: function () {
-      // Password is only required for admin role
-      // Partner role can have null password initially (set via setup link)
+      // Password is only required for full admins.
+      // Partner and sub-admin roles can have null password initially
+      // (it is set via the emailed setup link).
       return this.role === "admin";
     },
     minlength: 6,
@@ -106,6 +107,28 @@ const userSchema = new mongoose.Schema({
   pets: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Pet",
+  },
+
+  // Staff accounts (admin / subadmin) can be deactivated without deleting them.
+  // Deactivated accounts are rejected at login.
+  isActive: {
+    type: Boolean,
+    default: true,
+  },
+  // Per-account checkpoints for sub-admins, e.g. "products.pricing".
+  // A full admin implicitly holds everything and ignores this list; for a
+  // sub-admin it is the complete set of what they may do. See
+  // config/permissions.js for the catalogue.
+  permissions: {
+    type: [String],
+    default: [],
+  },
+
+  // Who created this staff account (set for sub-admins created from Settings)
+  createdBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+    default: null,
   },
 
   createdAt: {

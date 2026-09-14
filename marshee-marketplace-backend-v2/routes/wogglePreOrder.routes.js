@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const wogglePreOrderController = require('../controllers/wogglePreOrder.controller');
 const wogglePaymentController = require('../controllers/wogglePayment.controller');
-const { protect, authorize } = require('../middleware/auth');
+const { protect, authorize, requirePermission } = require('../middleware/auth');
 
 /**
  * @swagger
@@ -64,7 +64,7 @@ router.post('/pre-order', wogglePreOrderController.createWogglePreOrder);
  *     responses:
  *       200: { description: List of Woggle pre-orders }
  */
-router.get('/pre-order', protect, authorize('admin'), wogglePreOrderController.getAllWogglePreOrders);
+router.get('/pre-order', protect, requirePermission('preorders.manage'), wogglePreOrderController.getAllWogglePreOrders);
 
 /**
  * @swagger
@@ -75,7 +75,7 @@ router.get('/pre-order', protect, authorize('admin'), wogglePreOrderController.g
  *     responses:
  *       200: { description: Woggle pre-order stats }
  */
-router.get('/pre-order/stats', protect, authorize('admin'), wogglePreOrderController.getWogglePreOrderStats);
+router.get('/pre-order/stats', protect, requirePermission('preorders.manage'), wogglePreOrderController.getWogglePreOrderStats);
 
 /**
  * @swagger
@@ -92,7 +92,7 @@ router.get('/pre-order/stats', protect, authorize('admin'), wogglePreOrderContro
  *       200: { description: Woggle pre-order details }
  *       404: { description: Pre-order not found }
  */
-router.get('/pre-order/:id', protect, authorize('admin'), wogglePreOrderController.getWogglePreOrderById);
+router.get('/pre-order/:id', protect, requirePermission('preorders.manage'), wogglePreOrderController.getWogglePreOrderById);
 
 /**
  * @swagger
@@ -121,7 +121,7 @@ router.get('/pre-order/:id', protect, authorize('admin'), wogglePreOrderControll
  *       200: { description: Woggle pre-order updated }
  *       404: { description: Pre-order not found }
  */
-router.put('/pre-order/:id', protect, authorize('admin'), wogglePreOrderController.updateWogglePreOrder);
+router.put('/pre-order/:id', protect, requirePermission('preorders.manage'), wogglePreOrderController.updateWogglePreOrder);
 
 /**
  * @swagger
@@ -138,7 +138,7 @@ router.put('/pre-order/:id', protect, authorize('admin'), wogglePreOrderControll
  *       200: { description: Woggle pre-order deleted }
  *       404: { description: Pre-order not found }
  */
-router.delete('/pre-order/:id', protect, authorize('admin'), wogglePreOrderController.deleteWogglePreOrder);
+router.delete('/pre-order/:id', protect, requirePermission('preorders.manage'), wogglePreOrderController.deleteWogglePreOrder);
 
 /**
  * @swagger

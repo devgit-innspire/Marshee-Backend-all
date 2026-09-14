@@ -42,7 +42,7 @@ const { protect, authorize } = require('../middleware/auth');
 router.post(
   '/gcs',
   protect,
-  authorize('partner', 'admin', 'user'),
+  authorize('partner', 'admin', 'subadmin', 'user'),
   ...uploadGcsImages('images')
 );
 

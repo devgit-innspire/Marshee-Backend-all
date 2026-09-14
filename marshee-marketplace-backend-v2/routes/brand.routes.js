@@ -38,7 +38,7 @@ const { protect, authorize } = require('../middleware/auth');
  *       201:
  *         description: Brand created successfully
  */
-router.post('/', protect, authorize('partner', 'admin'), brandController.createBrand);
+router.post('/', protect, authorize('partner', 'admin', 'subadmin'), brandController.createBrand);
 
 /**
  * @swagger
@@ -65,7 +65,7 @@ router.get('/', brandController.getBrands);
  *       200:
  *         description: List of brands
  */
-router.get('/myBrands', protect, authorize('partner', 'admin'), brandController.getMyBrands);
+router.get('/myBrands', protect, authorize('partner', 'admin', 'subadmin'), brandController.getMyBrands);
 
 /**
  * @swagger

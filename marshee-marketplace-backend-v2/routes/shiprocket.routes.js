@@ -113,7 +113,7 @@ router.get('/check-delivery', protect, shiprocketController.checkDelivery);
  *       400: { description: Validation error }
  *       401: { description: Unauthorized }
  */
-router.post('/orders/create', protect, authorize('admin'), shiprocketController.createOrder);
+router.post('/orders/create', protect, authorize('admin', 'subadmin'), shiprocketController.createOrder);
 
 /**
  * @swagger
@@ -134,7 +134,7 @@ router.post('/orders/create', protect, authorize('admin'), shiprocketController.
  *       200: { description: Orders cancellation result }
  *       401: { description: Unauthorized }
  */
-router.post('/orders/cancel', protect, authorize('admin'), shiprocketController.cancelOrder);
+router.post('/orders/cancel', protect, authorize('admin', 'subadmin'), shiprocketController.cancelOrder);
 
 /**
  * @swagger
@@ -174,7 +174,7 @@ router.get('/pickup-locations', protect, shiprocketController.getPickupLocations
  *       200: { description: Pickup location added }
  *       401: { description: Unauthorized }
  */
-router.post('/pickup-locations', protect, authorize('admin'), shiprocketController.addPickupLocation);
+router.post('/pickup-locations', protect, authorize('admin', 'subadmin'), shiprocketController.addPickupLocation);
 
 /**
  * @swagger
@@ -274,7 +274,7 @@ router.get('/orders', protect, shiprocketController.getOrders);
  *       400: { description: Validation error }
  *       401: { description: Unauthorized }
  */
-router.post('/courier/assign/awb', protect, authorize('admin'), shiprocketController.assignAWB);
+router.post('/courier/assign/awb', protect, authorize('admin', 'subadmin'), shiprocketController.assignAWB);
 
 /**
  * @swagger
@@ -300,7 +300,7 @@ router.post('/courier/assign/awb', protect, authorize('admin'), shiprocketContro
  *       400: { description: Validation error }
  *       401: { description: Unauthorized }
  */
-router.post('/courier/generate/pickup', protect, authorize('admin'), shiprocketController.requestPickup);
+router.post('/courier/generate/pickup', protect, authorize('admin', 'subadmin'), shiprocketController.requestPickup);
 
 /**
  * @swagger

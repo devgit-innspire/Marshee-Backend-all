@@ -16,7 +16,7 @@ const {
   addProductReview,
   getRecommendedProducts
 } = require('../controllers/product.controller.js');
-const { protect, authorize } = require('../middleware/auth');
+const { protect, authorize, requirePermission } = require('../middleware/auth');
 const { uploadProductImages, uploadReviewMedia } = require('../utils/imageUpload');
 const { default: rateLimit, ipKeyGenerator } = require('express-rate-limit');
 
@@ -57,7 +57,7 @@ const recommendationsLimiter = rateLimit({
  *       400: { description: Validation error }
  *       401: { description: Unauthorized }
  */
-router.post('/', protect, authorize('partner', 'admin'), uploadProductImages('images'), addProduct);
+router.post('/', protect, requirePermission('products.edit', { allowPartner: true }), uploadProductImages('images'), addProduct);
 
 /**
  * @swagger
@@ -104,7 +104,7 @@ router.get('/', getAllProducts);
  *       200: { description: Dashboard product list }
  *       401: { description: Unauthorized }
  */
-router.get('/dashboard', protect, authorize('partner', 'admin'), getDashboardProducts);
+router.get('/dashboard', protect, requirePermission('products.view', 'products.edit', { allowPartner: true }), getDashboardProducts);
 
 /**
  * @swagger
@@ -127,7 +127,7 @@ router.get('/dashboard', protect, authorize('partner', 'admin'), getDashboardPro
  *       401: { description: Unauthorized }
  *       403: { description: Forbidden - Admin only }
  */
-router.get('/for-review', protect, authorize('admin'), getProductsForReview);
+router.get('/for-review', protect, requirePermission('products.approve'), getProductsForReview);
 
 /**
  * @swagger
@@ -330,7 +330,7 @@ router.put('/:id', protect, uploadProductImages('images'), updateProduct);
  *       403: { description: Forbidden }
  *       404: { description: Product not found }
  */
-router.patch('/:id/approval', protect, authorize('admin'), updateProductApproval);
+router.patch('/:id/approval', protect, requirePermission('products.approve'), updateProductApproval);
 
 /**
  * @swagger

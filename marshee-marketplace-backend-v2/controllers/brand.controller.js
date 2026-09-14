@@ -2,6 +2,7 @@ const Brand = require('../models/brand.model');
 const Partner = require('../models/partner.model');
 const { StatusCodes } = require('http-status-codes');
 const ErrorResponse = require('../utils/errorResponse');
+const { isStaff } = require('../utils/roles');
 
 class BrandController {
     async createBrand(req, res, next) {
@@ -21,7 +22,7 @@ class BrandController {
                 partnerId = partner._id;
             }
             // Admin can optionally specify a partner
-            else if (req.user && req.user.role === 'admin' && req.body.partner) {
+            else if (isStaff(req.user) && req.body.partner) {
                 partnerId = req.body.partner;
             }
 

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const couponController = require('../controllers/coupon.controller');
-const { protect, optionalProtect, authorize } = require('../middleware/auth');
+const { protect, optionalProtect, authorize, requirePermission } = require('../middleware/auth');
 const { default: rateLimit, ipKeyGenerator } = require('express-rate-limit');
 
 // 10 validation attempts per 10 min per IP
@@ -63,7 +63,7 @@ const couponLimiter = rateLimit({
  *       201:
  *         description: Coupon created successfully
  */
-router.post('/', protect, authorize('admin'), couponController.createCoupon);
+router.post('/', protect, requirePermission('coupons.manage'), couponController.createCoupon);
 
 /**
  * @swagger
@@ -98,7 +98,7 @@ router.post('/', protect, authorize('admin'), couponController.createCoupon);
  *       200:
  *         description: List of coupons
  */
-router.get('/', protect, authorize('admin'), couponController.getAllCoupons);
+router.get('/', protect, requirePermission('coupons.manage'), couponController.getAllCoupons);
 
 /**
  * @swagger
@@ -202,7 +202,7 @@ router.post('/validate', optionalProtect, couponLimiter, couponController.valida
  *       200:
  *         description: Coupon details
  */
-router.get('/:id', protect, authorize('admin'), couponController.getCouponById);
+router.get('/:id', protect, requirePermission('coupons.manage'), couponController.getCouponById);
 
 /**
  * @swagger
@@ -228,7 +228,7 @@ router.get('/:id', protect, authorize('admin'), couponController.getCouponById);
  *       200:
  *         description: Coupon updated successfully
  */
-router.put('/:id', protect, authorize('admin'), couponController.updateCoupon);
+router.put('/:id', protect, requirePermission('coupons.manage'), couponController.updateCoupon);
 
 /**
  * @swagger
@@ -248,6 +248,6 @@ router.put('/:id', protect, authorize('admin'), couponController.updateCoupon);
  *       200:
  *         description: Coupon deleted successfully
  */
-router.delete('/:id', protect, authorize('admin'), couponController.deleteCoupon);
+router.delete('/:id', protect, requirePermission('coupons.manage'), couponController.deleteCoupon);
 
 module.exports = router;

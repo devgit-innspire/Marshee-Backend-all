@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const cartController = require('../controllers/cart.controller');
 const { validateCartAdd, validateCartUpdate, validateCartRemove, validateCartApplyCoupon, validateCartCheckoutPreferences } = require('../middleware/validation');
-const { protect, authorize } = require('../middleware/auth');
+const { protect, authorize, requirePermission } = require('../middleware/auth');
 
 /**
  * @swagger
@@ -330,7 +330,7 @@ router.delete('/remove-service', protect, cartController.removeServiceFromCart);
  *       200:
  *         description: Dashboard carts list with user details
  */
-router.get('/admin/carts', protect, authorize('admin'), cartController.getDashboardCarts);
+router.get('/admin/carts', protect, requirePermission('cartleads.view'), cartController.getDashboardCarts);
 
 
 module.exports = router;

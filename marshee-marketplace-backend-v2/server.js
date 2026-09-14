@@ -26,6 +26,8 @@ const wogglePreOrderRoutes = require('./routes/wogglePreOrder.routes');
 const shiprocketRoutes = require('./routes/shiprocket.routes');
 const analyticsRoutes = require('./routes/analytics.routes');
 const uploadRoutes = require('./routes/upload.routes');
+const deviceRoutes = require('./routes/device.routes');
+const staffRoutes = require('./routes/staff.routes');
 
 require('dotenv').config();
 
@@ -34,11 +36,17 @@ const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB (non-blocking - don't wait for connection to start server)
 // Cloud Run requires the server to start listening quickly
-connectDB().catch(err => {
-    console.error('MongoDB connection error (server will continue):', err.message);
-    // Don't exit - let the server start even if DB connection fails
-    // The connection will retry automatically
-});
+// Bootstrap runs only after the database is actually reachable — it writes user
+// records, so firing it on a failed connection would just log noise.
+const { runBootstrap } = require('./utils/bootstrapAdmin');
+
+connectDB()
+    .then(() => runBootstrap())
+    .catch(err => {
+        console.error('MongoDB connection error (server will continue):', err.message);
+        // Don't exit - let the server start even if DB connection fails
+        // The connection will retry automatically
+    });
 
 // Middleware
 app.use(cookieParser());
@@ -47,10 +55,12 @@ app.use(compression()); // Compress responses
 app.use(morgan('dev')); // Request logging
 const defaultOrigins = [
     'https://marshee-admin-dashboard.vercel.app',
+    'https://firmware-marshee-kqyi.vercel.app',
     'https://www.marshee.com',
     'https://marshee.com',
     'http://localhost:3000',
-    'http://localhost:3001'
+    'http://localhost:3001',
+    'http://localhost:5173'
 ];
 
 let allowedOrigins = process.env.CORS_ORIGIN
@@ -65,7 +75,7 @@ app.use(cors({
         // Allow requests with no origin (like mobile apps, curl, or postman)
         if (!origin) return callback(null, true);
         
-        if (allowedOrigins.includes(origin)) {
+        if (allowedOrigins.includes(origin) || /\.vercel\.app$/.test(new URL(origin).hostname)) {
             return callback(null, true);
         }
         
@@ -108,6 +118,8 @@ app.use('/api/v1/woggle', wogglePreOrderRoutes);
 app.use('/api/v1/shiprocket', shiprocketRoutes);
 app.use('/api/v1/analytics', analyticsRoutes);
 app.use('/api/v1/upload', uploadRoutes);
+app.use('/api/v1/devices', deviceRoutes);
+app.use('/api/v1/staff', staffRoutes);
 
 // Health check endpoint
 app.get('/health', (req, res) => {

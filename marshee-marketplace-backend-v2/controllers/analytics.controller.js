@@ -3,6 +3,7 @@ const ErrorResponse = require('../utils/errorResponse');
 const Product = require('../models/product.model');
 const Order = require('../models/order.model');
 const Partner = require('../models/partner.model');
+const { isStaff } = require('../utils/roles');
 
 class AnalyticsController {
   // ===== Helpers =====
@@ -366,7 +367,7 @@ class AnalyticsController {
         }
       };
 
-      if (user.role === 'admin') {
+      if (isStaff(user)) {
         const [categoryData, partnerData] = await Promise.all([
           this._getCategoryAnalytics(dateFilter),
           this._getPartnerSalesAnalytics(dateFilter)

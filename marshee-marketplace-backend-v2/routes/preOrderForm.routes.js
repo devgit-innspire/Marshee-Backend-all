@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const contactController = require('../controllers/preOrderForm.controller');
-const { protect, authorize } = require('../middleware/auth');
+const { protect, authorize, requirePermission } = require('../middleware/auth');
 
 /**
  * @swagger
@@ -59,7 +59,7 @@ router.post('/', contactController.createPreOrder);
  *     responses:
  *       200: { description: List of pre-orders }
  */
-router.get('/', protect, authorize('admin'), contactController.getAllPreOrders);
+router.get('/', protect, requirePermission('preorders.manage'), contactController.getAllPreOrders);
 
 /**
  * @swagger
@@ -70,7 +70,7 @@ router.get('/', protect, authorize('admin'), contactController.getAllPreOrders);
  *     responses:
  *       200: { description: Pre-order stats }
  */
-router.get('/stats', protect, authorize('admin'), contactController.getPreOrderStats);
+router.get('/stats', protect, requirePermission('preorders.manage'), contactController.getPreOrderStats);
 
 /**
  * @swagger
@@ -87,7 +87,7 @@ router.get('/stats', protect, authorize('admin'), contactController.getPreOrderS
  *       200: { description: Pre-order details }
  *       404: { description: Pre-order not found }
  */
-router.get('/:id', protect, authorize('admin'), contactController.getPreOrderById);
+router.get('/:id', protect, requirePermission('preorders.manage'), contactController.getPreOrderById);
 
 /**
  * @swagger
@@ -116,7 +116,7 @@ router.get('/:id', protect, authorize('admin'), contactController.getPreOrderByI
  *       200: { description: Pre-order updated }
  *       404: { description: Pre-order not found }
  */
-router.put('/:id', protect, authorize('admin'), contactController.updatePreOrder);
+router.put('/:id', protect, requirePermission('preorders.manage'), contactController.updatePreOrder);
 
 /**
  * @swagger
@@ -133,7 +133,7 @@ router.put('/:id', protect, authorize('admin'), contactController.updatePreOrder
  *       200: { description: Pre-order deleted }
  *       404: { description: Pre-order not found }
  */
-router.delete('/:id', protect, authorize('admin'), contactController.deletePreOrder);
+router.delete('/:id', protect, requirePermission('preorders.manage'), contactController.deletePreOrder);
 
 module.exports = router;
 

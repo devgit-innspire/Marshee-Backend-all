@@ -481,10 +481,89 @@ const sendPartnerPasswordSetupEmail = async (email, name, setupToken, setupUrl) 
   }
 };
 
+/**
+ * Send sub-admin password setup email with JWT token
+ * @param {String} email - Sub-admin email address
+ * @param {String} name - Sub-admin name
+ * @param {String} setupUrl - Full URL for password setup
+ * @returns {Promise<Object>} - Result object with success status
+ */
+const sendSubadminPasswordSetupEmail = async (email, name, setupUrl) => {
+  try {
+    const transporter = createTransporter();
+
+    if (!transporter) {
+      return { success: false, error: 'Email service not configured' };
+    }
+
+    const mailOptions = {
+      from: `"Marshee Pet Tech" <${config.email.user}>`,
+      to: email,
+      subject: 'Your Marshee Admin Console access - Set Up Your Password',
+      html: `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
+          <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
+            <h1 style="color: #fff; margin: 0;">Marshee Admin Console</h1>
+          </div>
+          <div style="background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; border: 1px solid #ddd;">
+            <h2 style="color: #667eea;">Hello ${name}!</h2>
+            <p>A sub-admin account has been created for you on the Marshee Admin Console.</p>
+            <p><strong>To get started, please set up your password by clicking the button below:</strong></p>
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="${setupUrl}" style="background: #667eea; color: #fff; padding: 15px 40px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">Set Up Password</a>
+            </div>
+            <p style="font-size: 12px; color: #666; margin-top: 30px;">
+              <strong>Important:</strong> This link will expire in 7 days. If you didn't expect this, please contact your administrator.
+            </p>
+            <p style="font-size: 12px; color: #666;">
+              Or copy and paste this link into your browser:<br>
+              <a href="${setupUrl}" style="color: #667eea; word-break: break-all;">${setupUrl}</a>
+            </p>
+          </div>
+        </body>
+        </html>
+      `,
+      text: `
+        Marshee Admin Console
+
+        Hello ${name},
+
+        A sub-admin account has been created for you on the Marshee Admin Console.
+
+        To get started, please set up your password by visiting:
+        ${setupUrl}
+
+        This link will expire in 7 days.
+
+        If you didn't expect this, please contact your administrator.
+      `
+    };
+
+    const info = await transporter.sendMail(mailOptions);
+    return {
+      success: true,
+      messageId: info.messageId
+    };
+  } catch (error) {
+    console.error('Error sending sub-admin password setup email:', error);
+    return {
+      success: false,
+      error: error.message
+    };
+  }
+};
+
 module.exports = {
   sendOtpEmail,
   sendWelcomeEmail,
   sendPreOrderConfirmationEmail,
-  sendPartnerPasswordSetupEmail
+  sendPartnerPasswordSetupEmail,
+  sendSubadminPasswordSetupEmail
 };
 

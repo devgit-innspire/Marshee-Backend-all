@@ -1,0 +1,56 @@
+# GCP Cloud Build — build the image and deploy it to Cloud Run.
+#
+# Deploys the `marketplace-v2` service in europe-west1, which replaces the older
+# `marshee-marketplace-backend-v2` service in asia-southeast1.
+#
+# Usage:
+#   gcloud builds submit --config=cloudbuild.yaml
+#
+# Override the target if needed:
+#   gcloud builds submit --config=cloudbuild.yaml \
+#     --substitutions=_SERVICE=marketplace-v2,_REGION=europe-west1
+#
+# Runtime configuration (MONGODB_URI, JWT_SECRET, SMTP_*, CORS_ORIGIN,
+# ADMIN_CONSOLE_URL, BOOTSTRAP_ADMIN_*) is deliberately NOT set here — it lives on
+# the Cloud Run service so secrets never enter the build config or this repo.
+# `--revision-suffix` is omitted so existing variables carry over to the new revision.
+
+substitutions:
+  _REGION: europe-west1
+  _SERVICE: marketplace-v2
+  _REPO: cloud-run-source-deploy
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+steps:
+  - id: build
+    name: "gcr.io/cloud-builders/docker"
+    args:
+      - "build"
+      - "-t"
+      - "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_SERVICE}:$SHORT_SHA"
+      - "-t"
+      - "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_SERVICE}:latest"
+      - "."
+
+  - id: push
+    name: "gcr.io/cloud-builders/docker"
+    args: ["push", "--all-tags", "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_SERVICE}"]
+
+  - id: deploy
+    name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      - "run"
+      - "deploy"
+      - "${_SERVICE}"
+      - "--image=${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_SERVICE}:$SHORT_SHA"
+      - "--region=${_REGION}"
+      - "--platform=managed"
+      - "--allow-unauthenticated"
+      - "--port=8080"
+
+images:
+  - "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_SERVICE}:$SHORT_SHA"
+  - "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/${_SERVICE}:latest"

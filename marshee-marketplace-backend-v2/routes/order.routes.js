@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const orderController = require('../controllers/order.controller');
-const { protect, authorize } = require('../middleware/auth');
+const { protect, authorize, requirePermission } = require('../middleware/auth');
 
 /**
  * @swagger
@@ -76,7 +76,7 @@ router.get('/', protect, orderController.getOrders);
  *       401: { description: Unauthorized }
  *       403: { description: Forbidden }
  */
-router.get('/admin/all', protect, authorize('admin', 'partner'), orderController.getAllOrders);
+router.get('/admin/all', protect, requirePermission('orders.view', 'orders.manage', { allowPartner: true }), orderController.getAllOrders);
 
 /**
  * @swagger
@@ -192,7 +192,7 @@ router.post('/:id/cancel', protect, orderController.cancelOrder);
  *       403: { description: Forbidden }
  *       404: { description: Order not found }
  */
-router.put('/:id/status', protect, authorize('admin'), orderController.updateOrderStatus);
+router.put('/:id/status', protect, requirePermission('orders.manage'), orderController.updateOrderStatus);
 
 /**
  * @swagger

@@ -8,6 +8,7 @@ const { cosineSimilarity } = require("../utils/ai/similarity");
 const { sendZapierEmail } = require("../utils/zapierEmailService");
 const Review = require("../models/review.model");
 const PopularSearch = require("../models/popularSearch.model");
+const { isStaff, hasPermission } = require('../utils/roles');
 
 const MAX_POPULAR_SEARCH_QUERY_LEN = 120;
 const MIN_POPULAR_SEARCH_QUERY_LEN = 2;
@@ -196,6 +197,89 @@ function normalizeSubmitData(sd) {
   };
 }
 
+/**
+ * The fields that decide what a product sells for, and what a partner earns on
+ * it. Changing any of these is a "rate change" and needs `products.pricing`.
+ */
+const PRICE_FIELDS = ['listPrice', 'mrp', 'discounted', 'costPrice'];
+const COMMISSION_FIELDS = ['percentage', 'value'];
+
+/** Variants may arrive as a JSON string from multipart form posts. */
+function parseVariantPayload(raw) {
+  let list = raw;
+  if (typeof list === 'string') {
+    try {
+      const parsed = JSON.parse(list);
+      list = Array.isArray(parsed) ? parsed : [parsed];
+    } catch {
+      return null;
+    }
+  }
+  return Array.isArray(list) ? list : null;
+}
+
+const num = (v) => (v === undefined || v === null || v === '' ? null : Number(v));
+
+/**
+ * True when `updateData` would change any price or commission on `product`.
+ *
+ * Compares incoming values against the stored variant rather than simply
+ * checking whether a price field was present: dashboards routinely re-post the
+ * whole product unchanged, and blocking that would make the product form
+ * unusable for anyone without pricing rights.
+ */
+function attemptsPricingChange(product, updateData) {
+  const incoming = parseVariantPayload(updateData?.variants);
+  if (!incoming) return false;
+
+  const existingById = new Map((product.variants || []).map((v) => [String(v.variantId), v]));
+
+  return incoming.some((v) => {
+    const existing = v?.variantId ? existingById.get(String(v.variantId)) : null;
+
+    // A brand-new variant carrying any price is itself a rate change.
+    if (!existing) {
+      const price = v?.price || {};
+      const commission = v?.commission || {};
+      return (
+        PRICE_FIELDS.some((f) => num(price[f]) !== null) ||
+        COMMISSION_FIELDS.some((f) => num(commission[f]) !== null)
+      );
+    }
+
+    const priceChanged = PRICE_FIELDS.some((f) => {
+      const next = num(v?.price?.[f]);
+      if (next === null) return false; // not supplied — not a change
+      return next !== num(existing?.price?.[f]);
+    });
+
+    const commissionChanged = COMMISSION_FIELDS.some((f) => {
+      const next = num(v?.commission?.[f]);
+      if (next === null) return false;
+      return next !== num(existing?.commission?.[f]);
+    });
+
+    return priceChanged || commissionChanged;
+  });
+}
+
+/** True when a create payload sets any price or commission at all. */
+function setsAnyPricing(body) {
+  const incoming = parseVariantPayload(body?.variants);
+  if (!incoming) return false;
+  return incoming.some((v) => {
+    const price = v?.price || {};
+    const commission = v?.commission || {};
+    return (
+      PRICE_FIELDS.some((f) => num(price[f]) !== null) ||
+      COMMISSION_FIELDS.some((f) => num(commission[f]) !== null)
+    );
+  });
+}
+
+const PRICING_DENIED =
+  'You do not have permission to set or change pricing. Required: products.pricing. Ask an admin to grant it.';
+
 const addProduct = async (req, res) => {
   const session = await mongoose.startSession();
   session.startTransaction();
@@ -206,6 +290,14 @@ const addProduct = async (req, res) => {
     if (body.submitData) {
       body = { ...normalizeSubmitData(body.submitData), ...body };
       delete body.submitData;
+    }
+
+    // Same checkpoint as on update — otherwise someone barred from changing
+    // rates could simply create the product at whatever price they liked.
+    if (isStaff(req.user) && !hasPermission(req.user, 'products.pricing') && setsAnyPricing(body)) {
+      await session.abortTransaction();
+      session.endSession();
+      return res.status(403).json({ success: false, message: PRICING_DENIED });
     }
 
     const {
@@ -545,7 +637,7 @@ const addProduct = async (req, res) => {
         isFeatured: false,
         approval: {
           // Only admin can create as approved; partner or unauthenticated always draft
-          status: (req.user && req.user.role === "admin" && status === "active") ? "approved" : "draft",
+          status: (isStaff(req.user) && status === "active") ? "approved" : "draft",
           approvedBy: approvedBy || null,
           notes: "",
         },
@@ -909,8 +1001,8 @@ const getAllProducts = async (req, res) => {
     // Build filter object
     const filter = {};
 
-    // Non-admin (public or partner): only show approved, active products (live catalog)
-    if (!req.user || req.user.role !== 'admin') {
+    // Non-staff (public or partner): only show approved, active products (live catalog)
+    if (!isStaff(req.user)) {
       filter['status.approval.status'] = 'approved';
       filter['status.isActive'] = true;
     }
@@ -936,7 +1028,7 @@ const getAllProducts = async (req, res) => {
     if (productType) filter['petDetails.productType'] = productType;
 
     // Status filters (admin can override with ?status=draft|pending|approved|rejected)
-    if (status && req.user && req.user.role === 'admin') filter['status.approval.status'] = status;
+    if (status && isStaff(req.user)) filter['status.approval.status'] = status;
     if (inStock !== undefined) {
       filter['status.inventory'] = inStock === 'true' ? 'in_stock' : { $ne: 'in_stock' };
     }
@@ -1074,7 +1166,7 @@ const getProductById = async (req, res) => {
     let canView = false;
     if (isApprovedAndActive) {
       canView = true;
-    } else if (req.user && req.user.role === 'admin') {
+    } else if (isStaff(req.user)) {
       canView = true;
     } else if (req.user && req.user.role === 'partner') {
       const partnerProfile = await Partner.findOne({ user: req.user._id });
@@ -1273,8 +1365,8 @@ const updateProduct = async (req, res) => {
       });
     }
 
-    // Only product owner (partner) or admin can update
-    if (req.user.role !== 'admin') {
+    // Only product owner (partner) or staff can update
+    if (!isStaff(req.user)) {
       const partnerProfile = await Partner.findOne({ user: req.user._id }).session(session);
       const productPartnerId = (product.partner && product.partner._id ? product.partner._id : product.partner)?.toString();
       if (!partnerProfile || productPartnerId !== partnerProfile._id.toString()) {
@@ -1284,6 +1376,16 @@ const updateProduct = async (req, res) => {
           success: false,
           message: 'Not authorized to update this product'
         });
+      }
+    }
+
+    // Rate changes are a separate checkpoint from ordinary product edits: a
+    // staff member may be allowed to fix a description but not what it sells for.
+    if (isStaff(req.user) && !hasPermission(req.user, 'products.pricing')) {
+      if (attemptsPricingChange(product, updateData)) {
+        await session.abortTransaction();
+        session.endSession();
+        return res.status(403).json({ success: false, message: PRICING_DENIED });
       }
     }
 
@@ -1409,7 +1511,7 @@ const updateProduct = async (req, res) => {
 
     // Approval: only admin can set approved/rejected; partner can only submit for review (draft -> pending)
     if (updateData.status && updateData.status.approval && req.user) {
-      if (req.user.role !== 'admin') {
+      if (!isStaff(req.user)) {
         if (req.user.role === 'partner') {
           const requestedStatus = updateData.status.approval.status;
           const currentStatus = product.status.approval?.status || 'draft';
@@ -1658,8 +1760,8 @@ const deleteProduct = async (req, res) => {
       });
     }
 
-    // Only product owner (partner) or admin can delete
-    if (req.user.role !== 'admin') {
+    // Only product owner (partner) or staff can delete
+    if (!isStaff(req.user)) {
       const partnerProfile = await Partner.findOne({ user: req.user._id }).session(session);
       const productPartnerId = (product.partner && product.partner._id ? product.partner._id : product.partner)?.toString();
       if (!partnerProfile || productPartnerId !== partnerProfile._id.toString()) {
@@ -2569,8 +2671,7 @@ const addProductReview = async (req, res) => {
 
     const isApprovedAndActive =
       product.status?.approval?.status === 'approved' && product.status?.isActive;
-    const isAdmin = req.user && req.user.role === 'admin';
-    if (!isApprovedAndActive && !isAdmin) {
+    if (!isApprovedAndActive && !isStaff(req.user)) {
       return res.status(404).json({
         success: false,
         message: 'Product not found'
@@ -2813,6 +2914,9 @@ const getRecommendedProducts = async (req, res) => {
 };
 
 module.exports = {
+  // Exported for tests — these decide whether an edit counts as a rate change.
+  attemptsPricingChange,
+  setsAnyPricing,
   addProduct,
   getAllProducts,
   getProductById,
